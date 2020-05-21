@@ -12,7 +12,6 @@ public abstract class MyButtons  {
     private MySongsPlayLists mySongsPlayLists;
     private int id;
     private ButtonsStrategy buttonsStrategy;
-    public abstract View.OnClickListener buttonFunction(ButtonCommunicationsController buttonCommunicationsController);
     public MyButtons(MySongsPlayLists mySongsPlayLists,ButtonsStrategy buttonsStrategy){
         this.mySongsPlayLists = mySongsPlayLists;
         this.buttonsStrategy = buttonsStrategy;

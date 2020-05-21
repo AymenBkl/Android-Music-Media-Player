@@ -15,11 +15,14 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.widget.ImageView;
+import android.widget.SeekBar;
 import android.widget.Toast;
 
 import com.example.asma3masiqa.Files.FileE;
 import com.example.asma3masiqa.Files.FileDownload;
 import com.example.asma3masiqa.Fragments.SongsList;
+import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerSong;
+import com.example.asma3masiqa.MediaPlayer.MySongsPlayLists;
 import com.example.asma3masiqa.Threads.DownloadThread;
 
 import java.io.File;
@@ -30,12 +33,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        handler = new Handler();
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.playlistfragment,new SongsList(new File(Environment.getExternalStorageDirectory()+"/Music/").listFiles()));
-        fragmentTransaction.commit();
+        setContentView(R.layout.song_player);
+        MyMediaPlayerSong myMediaPlayerSong = new MyMediaPlayerSong(MainActivity.this);
+        myMediaPlayerSong.playMySong(16);
 
     }
 

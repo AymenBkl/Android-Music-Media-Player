@@ -36,8 +36,8 @@ public class ButtonsController {
     }
     private void affectListners(int id,MySongsPlayLists mySongsPlayLists,List<Button> newButtons,ButtonCommunicationsController buttonCommunicationsController){
         newButtons.get(0).setOnClickListener((new PlayButton(id,mySongsPlayLists,new PlayOperation(newButtons.get(0),newButtons.get(2),newButtons.get(1)))).buttonFunction(buttonCommunicationsController));
-        newButtons.get(2).setOnClickListener(new PauseButton(id,mySongsPlayLists,new PauseOperation(newButtons.get(0),newButtons.get(2),newButtons.get(1))).buttonFunction(buttonCommunicationsController));
-        newButtons.get(1).setOnClickListener(new ResumeButton(id,mySongsPlayLists,new ResumeOperation(newButtons.get(0),newButtons.get(2),newButtons.get(1))).buttonFunction(buttonCommunicationsController));
+        newButtons.get(2).setOnClickListener(new PauseButton(id,mySongsPlayLists,new PauseOperation(newButtons.get(0),newButtons.get(2),newButtons.get(1))).buttonFunction());
+        newButtons.get(1).setOnClickListener(new ResumeButton(id,mySongsPlayLists,new ResumeOperation(newButtons.get(0),newButtons.get(2),newButtons.get(1))).buttonFunction());
     }
 
     public List<List<Button>> getButtons() {

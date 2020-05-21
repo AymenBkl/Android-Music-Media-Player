@@ -1,8 +1,7 @@
 package com.example.asma3masiqa.MediaPlayer;
 
 import android.media.MediaPlayer;
-import android.os.HandlerThread;
-import android.util.Log;
+
 
 import java.io.IOException;
 
@@ -13,7 +12,6 @@ public class MyMediaPlayerAdapter {
     }
 
     public void prepareSong(String songPath){
-        Log.i("lol","xdimheremedeaplayer");
         if (mediaPlayer.isPlaying()){
             mediaPlayer.stop();
             mediaPlayer.reset();
@@ -36,6 +34,27 @@ public class MyMediaPlayerAdapter {
         if (mediaPlayer.isPlaying()){
             mediaPlayer.pause();
         }
+    }
+    public int getDuration(){
+        if (mediaPlayer.isPlaying()){
+            return mediaPlayer.getDuration();
+        }
+        else {
+            return 0;
+        }
+    }
+
+    public int currentPosition(){
+        if (mediaPlayer.isPlaying()){
+            return mediaPlayer.getCurrentPosition();
+        }
+        else {
+            return 0;
+        }
+    }
+
+    public void goToPosition(int position){
+        mediaPlayer.seekTo(position);
     }
 
 }

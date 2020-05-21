@@ -17,7 +17,7 @@ public class ResumeButton extends MyButtons {
     }
 
 
-    public View.OnClickListener buttonFunction(ButtonCommunicationsController buttonCommunicationsController){
+    public View.OnClickListener buttonFunction(){
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,6 +1,10 @@
 package com.example.asma3masiqa.MediaPlayer;
 
 
+import android.os.HandlerThread;
+import android.util.Log;
+import android.widget.SeekBar;
+
 import com.example.asma3masiqa.Files.FileE;
 import com.example.asma3masiqa.Threads.MyMedeaPlayerThread;
 import com.example.asma3masiqa.Threads.ThreadInializare;
@@ -48,5 +52,26 @@ public class MySongsPlayLists {
             }
         };
         myMedeaPlayerThread.assignTask(runnable);
+    }
+
+
+    public MyMediaPlayerAdapter getMyMediaPlayerAdapter() {
+        return myMediaPlayerAdapter;
+    }
+
+    public void setMyMediaPlayerAdapter(MyMediaPlayerAdapter myMediaPlayerAdapter) {
+        this.myMediaPlayerAdapter = myMediaPlayerAdapter;
+    }
+
+    public MyMedeaPlayerThread getMyMedeaPlayerThread() {
+        return myMedeaPlayerThread;
+    }
+
+    public void setMyMedeaPlayerThread(MyMedeaPlayerThread myMedeaPlayerThread) {
+        this.myMedeaPlayerThread = myMedeaPlayerThread;
+    }
+
+    public int sizeFile(){
+        return this.songs.length;
     }
 }
