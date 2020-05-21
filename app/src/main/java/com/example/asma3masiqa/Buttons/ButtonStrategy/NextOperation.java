@@ -2,7 +2,7 @@ package com.example.asma3masiqa.Buttons.ButtonStrategy;
 
 import android.widget.Button;
 
-import com.example.asma3masiqa.Buttons.VisibilityController;
+import com.example.asma3masiqa.Controllers.VisibilityController;
 
 public class NextOperation extends ButtonsStrategy {
 

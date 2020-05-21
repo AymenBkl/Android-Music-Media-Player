@@ -17,7 +17,6 @@ public class PauseButtomFromPlayer extends MyButtons {
             public void onClick(View v) {
                 getMySongsPlayLists().pauseSong();
 
-                getButtonsStrategy().doOperation();
             }
         };
     }

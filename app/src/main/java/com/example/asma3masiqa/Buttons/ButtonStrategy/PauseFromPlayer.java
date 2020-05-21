@@ -2,7 +2,7 @@ package com.example.asma3masiqa.Buttons.ButtonStrategy;
 
 import android.widget.Button;
 
-import com.example.asma3masiqa.Buttons.VisibilityController;
+import com.example.asma3masiqa.Controllers.VisibilityController;
 
 public class PauseFromPlayer extends ButtonsStrategy {
 
@@ -13,8 +13,8 @@ public class PauseFromPlayer extends ButtonsStrategy {
     @Override
     public void doOperation() {
 
-        VisibilityController.visibilityToVisible(getPlay());
-        VisibilityController.visibilityToGone(getPause());
+        VisibilityController.visibilityToInvisible(getPause());
+        VisibilityController.visibilityToIVisible(getPlay());
 
     }
 

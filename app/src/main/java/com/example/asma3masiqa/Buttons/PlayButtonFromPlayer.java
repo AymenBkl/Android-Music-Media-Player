@@ -17,7 +17,6 @@ public class PlayButtonFromPlayer extends MyButtons {
             @Override
             public void onClick(View v) {
                 getMySongsPlayLists().playSong(getId());
-                getButtonsStrategy().doOperation();
             }
         };
     }

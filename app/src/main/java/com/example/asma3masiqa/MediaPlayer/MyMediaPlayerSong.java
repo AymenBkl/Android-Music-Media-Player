@@ -18,23 +18,28 @@ public class MyMediaPlayerSong {
     private SeekBarAdapter seekBarAdapter;
     private MediaPlayerButtonsController mediaPlayerButtonsController;
 
-    public MyMediaPlayerSong(MainActivity mainActivity){
+    public MyMediaPlayerSong(View view){
         this.mySongsPlayLists = new MySongsPlayLists(new File(Environment.getExternalStorageDirectory()+"/Music").listFiles());
-        this.seekBarAdapter = new SeekBarAdapter(new Seekbar(mainActivity,this.mySongsPlayLists.getMyMediaPlayerAdapter()));
-        this.mediaPlayerButtonsController = new MediaPlayerButtonsController(mainActivity.findViewById(R.id.mysongLayout),this.mySongsPlayLists);
+        this.seekBarAdapter = new SeekBarAdapter(new Seekbar(view,this.mySongsPlayLists.getMyMediaPlayerAdapter()));
+        this.mediaPlayerButtonsController = new MediaPlayerButtonsController(view,this);
     }
 
     private void seekBarManipulaition(){
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                seekBarAdapter.mainFunction(mySongsPlayLists.getMyMediaPlayerAdapter());
+                try {
+                    seekBarAdapter.mainFunction(mySongsPlayLists.getMyMediaPlayerAdapter());
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         };
-        this.mySongsPlayLists.getMyMedeaPlayerThread().assignTask(runnable);
+        this.seekBarAdapter.assignTask(runnable);
     }
     private void playSong(int position){
         mySongsPlayLists.playSong(position);
+
     }
 
     public void playMySong(int position){
@@ -43,4 +48,11 @@ public class MyMediaPlayerSong {
 
     }
 
+    public MySongsPlayLists getMySongsPlayLists() {
+        return mySongsPlayLists;
+    }
+
+    public void setMySongsPlayLists(MySongsPlayLists mySongsPlayLists) {
+        this.mySongsPlayLists = mySongsPlayLists;
+    }
 }

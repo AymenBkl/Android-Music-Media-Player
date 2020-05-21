@@ -5,21 +5,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.asma3masiqa.Buttons.ButtonStrategy.PauseOperation;
-import com.example.asma3masiqa.Buttons.ButtonStrategy.PlayOperation;
-import com.example.asma3masiqa.Buttons.ButtonStrategy.ResumeOperation;
-import com.example.asma3masiqa.Buttons.PauseButton;
-import com.example.asma3masiqa.Buttons.FactoryButton.PauseButtonFactory;
-import com.example.asma3masiqa.Buttons.PlayButton;
-import com.example.asma3masiqa.Buttons.FactoryButton.PlayButtonFactory;
-import com.example.asma3masiqa.Buttons.ResumeButton;
-import com.example.asma3masiqa.Buttons.FactoryButton.ResumeButtonFactory;
+
 import com.example.asma3masiqa.Controllers.ButtonCommunicationsController;
 import com.example.asma3masiqa.Controllers.ButtonsController;
 import com.example.asma3masiqa.MediaPlayer.MySongsPlayLists;

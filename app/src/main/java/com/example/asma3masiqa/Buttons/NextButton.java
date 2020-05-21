@@ -20,10 +20,9 @@ public class NextButton extends MyButtons {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (((NextFromPlayer) getButtonsStrategy()).checks(getId())){
                     setId(getId()+1);
                     getMySongsPlayLists().playSong(getId());
-                }
+
             }
         };
     }

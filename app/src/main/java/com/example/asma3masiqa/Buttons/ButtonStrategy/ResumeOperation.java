@@ -2,7 +2,7 @@ package com.example.asma3masiqa.Buttons.ButtonStrategy;
 
 import android.widget.Button;
 
-import com.example.asma3masiqa.Buttons.VisibilityController;
+import com.example.asma3masiqa.Controllers.VisibilityController;
 
 public class ResumeOperation extends ButtonsStrategy {
     public ResumeOperation(Button play, Button pause, Button resume) {
@@ -11,8 +11,8 @@ public class ResumeOperation extends ButtonsStrategy {
 
     @Override
     public void doOperation() {
-        VisibilityController.visibilityToVisible(getPause());
         VisibilityController.visibilityToGone(getResume());
-        VisibilityController.visibilityToGone(getPlay());
+        VisibilityController.visibilityToVisible(getPause());
+
     }
 }

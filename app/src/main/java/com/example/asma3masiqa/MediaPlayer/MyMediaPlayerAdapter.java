@@ -12,10 +12,9 @@ public class MyMediaPlayerAdapter {
     }
 
     public void prepareSong(String songPath){
-        if (mediaPlayer.isPlaying()){
-            mediaPlayer.stop();
-            mediaPlayer.reset();
-        }
+        mediaPlayer.stop();
+        mediaPlayer.reset();
+
         try {
             mediaPlayer.setDataSource(songPath);
             mediaPlayer.prepare();

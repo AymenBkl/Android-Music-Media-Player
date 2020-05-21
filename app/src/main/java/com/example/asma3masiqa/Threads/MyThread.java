@@ -19,7 +19,9 @@ public abstract class MyThread extends HandlerThread implements HandlerOperation
     }
 
     public void assignTask(Runnable task){
-        this.handler.post(task);
+
+        this.handler.postAtFrontOfQueue(task);
+
     }
 
 }

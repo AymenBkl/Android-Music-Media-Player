@@ -1,6 +1,7 @@
 package com.example.asma3masiqa;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -20,6 +21,7 @@ import android.widget.Toast;
 
 import com.example.asma3masiqa.Files.FileE;
 import com.example.asma3masiqa.Files.FileDownload;
+import com.example.asma3masiqa.Fragments.SongPlayer;
 import com.example.asma3masiqa.Fragments.SongsList;
 import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerSong;
 import com.example.asma3masiqa.MediaPlayer.MySongsPlayLists;
@@ -33,10 +35,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.song_player);
-        MyMediaPlayerSong myMediaPlayerSong = new MyMediaPlayerSong(MainActivity.this);
-        myMediaPlayerSong.playMySong(16);
-
+        setContentView(R.layout.activity_main);
+        SongPlayer songPlayer = new SongPlayer();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.playlistfragment,songPlayer);
+        fragmentTransaction.commit();
     }
 
 }

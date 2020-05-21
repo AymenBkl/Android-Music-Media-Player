@@ -1,5 +1,7 @@
 package com.example.asma3masiqa.SeekBar;
 
+import android.util.Log;
+
 import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerAdapter;
 
 public class SeekBarAdapter {
@@ -9,9 +11,11 @@ public class SeekBarAdapter {
         this.seekBar = seekBar;
     }
 
-    public void mainFunction(MyMediaPlayerAdapter myMediaPlayerAdapter){
+    public void mainFunction(MyMediaPlayerAdapter myMediaPlayerAdapter) throws InterruptedException {
+        Thread.sleep(1000);
         final int interval = 10;
         int totalDuration = myMediaPlayerAdapter.getDuration();
+        Log.i("lol","xd"+totalDuration);
         int currentPosition = 0;
         seekBar.setMax(totalDuration/interval);
 
@@ -23,6 +27,11 @@ public class SeekBarAdapter {
             catch (Exception e){
                 e.printStackTrace();
             }
+
         }
+    }
+
+    public void assignTask(Runnable r){
+        seekBar.getSeekBarThread().assignTask(r);
     }
 }

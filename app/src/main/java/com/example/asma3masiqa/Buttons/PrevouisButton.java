@@ -17,10 +17,9 @@ public class PrevouisButton extends MyButtons {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (((PrevouisFromPlayer) getButtonsStrategy()).checks(getId())){
                     setId(getId()-1);
                     getMySongsPlayLists().playSong(getId());
-                }
+
             }
         };
     }
