@@ -1,6 +1,8 @@
 package com.example.asma3masiqa.Fragments;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,8 +19,8 @@ import java.io.File;
 
 public class SongsList extends Fragment {
     private MyRecycleView myRecycleView;
-    public SongsList(File[] files){
-        this.myRecycleView = new MyRecycleView(files);
+    public SongsList(){
+        this.myRecycleView = new MyRecycleView(new File(Environment.getExternalStorageDirectory()+"/Music").listFiles());
     }
     @Nullable
     @Override
@@ -27,5 +29,15 @@ public class SongsList extends Fragment {
         this.myRecycleView.setRecyclerView(view,getActivity());
 
         return view;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
     }
 }

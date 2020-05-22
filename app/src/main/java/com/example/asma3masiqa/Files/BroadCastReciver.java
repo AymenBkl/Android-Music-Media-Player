@@ -18,7 +18,7 @@ public class BroadCastReciver {
                 if (downloadId == reference){
                     Log.i("lol","xdfileDownloaded"+downloadId);
                     SongDownloadHandler songDownloadHandler = new SongDownloadHandler(activity);
-                    songDownloadHandler.doOperation(file);
+                    songDownloadHandler.doOperation();
                 }
             }
         };

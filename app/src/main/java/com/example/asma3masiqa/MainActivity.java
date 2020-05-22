@@ -21,6 +21,7 @@ import android.widget.Toast;
 
 import com.example.asma3masiqa.Files.FileE;
 import com.example.asma3masiqa.Files.FileDownload;
+import com.example.asma3masiqa.Fragments.MyFragmentManager;
 import com.example.asma3masiqa.Fragments.SongPlayer;
 import com.example.asma3masiqa.Fragments.SongsList;
 import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerSong;
@@ -36,11 +37,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SongPlayer songPlayer = new SongPlayer();
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.playlistfragment,songPlayer);
-        fragmentTransaction.commit();
+        MyFragmentManager.getMyFragmentManager().setMainActivity(MainActivity.this);
+        MyFragmentManager.getMyFragmentManager().loadMainFragment();
     }
 
 }

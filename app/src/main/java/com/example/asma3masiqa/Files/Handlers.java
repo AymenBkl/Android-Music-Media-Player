@@ -7,13 +7,13 @@ import com.example.asma3masiqa.MainActivity;
 
 public abstract class Handlers {
     private Handler handler;
-    private MainActivity mainActivity;
+    private  MainActivity mainActivity;
 
     public Handlers(MainActivity mainActivity){
         this.mainActivity = mainActivity;
         this.handler = mainActivity.handler;
     }
-    public abstract void doOperation(FileE file);
+    public abstract void doOperation();
 
     public Handler getHandler() {
         return handler;
@@ -30,4 +30,6 @@ public abstract class Handlers {
     public void setMainActivity(MainActivity mainActivity) {
         this.mainActivity = mainActivity;
     }
+
+
 }

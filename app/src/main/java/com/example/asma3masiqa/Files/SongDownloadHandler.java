@@ -12,17 +12,14 @@ public class SongDownloadHandler extends Handlers {
     }
 
     @Override
-    public void doOperation(final FileE file) {
+    public void doOperation() {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                file.setLocation(changeLocation(file.getName()));
-                Toast.makeText(getMainActivity().getApplicationContext(),"Your Song Just Downloaded "+ file.getName(),Toast.LENGTH_LONG).show();
+                Toast.makeText(getMainActivity().getApplicationContext(),"Your Song Just Downloaded ",Toast.LENGTH_LONG).show();
             }
         };
         getHandler().post(runnable);
     }
-    public String changeLocation(String name){
-        return Environment.getExternalStorageDirectory()+"/Music/"+ name;
-    }
+
 }

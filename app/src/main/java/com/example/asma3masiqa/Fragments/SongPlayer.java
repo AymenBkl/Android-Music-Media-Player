@@ -1,5 +1,6 @@
 package com.example.asma3masiqa.Fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,15 +16,29 @@ import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerSong;
 import com.example.asma3masiqa.R;
 
 public class SongPlayer extends Fragment {
-
-    public SongPlayer(){
-    }
+    private View view;
+    private MyMediaPlayerSong myMediaPlayerSong;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view =  inflater.inflate(R.layout.song_player,container,false);
-        MyMediaPlayerSong myMediaPlayerSong = new MyMediaPlayerSong(view);
-        myMediaPlayerSong.playMySong(14);
+        view =  inflater.inflate(R.layout.song_player,container,false);
+        myMediaPlayerSong = new MyMediaPlayerSong(view);
         return view;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        if (myMediaPlayerSong != null ){
+            myMediaPlayerSong.playMySong(FragmentCommunication.getFragmentCommunication().getCurrentSong());
+        }
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        if (myMediaPlayerSong != null) {
+            myMediaPlayerSong.getMySongsPlayLists().pauseSong();
+        }
     }
 }

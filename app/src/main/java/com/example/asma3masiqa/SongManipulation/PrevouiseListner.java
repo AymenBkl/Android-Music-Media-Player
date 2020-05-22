@@ -1,12 +1,9 @@
-package com.example.asma3masiqa.Buttons.SongManipulation;
+package com.example.asma3masiqa.SongManipulation;
 
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
 import com.example.asma3masiqa.Buttons.ButtonStrategy.ButtonsStrategy;
 import com.example.asma3masiqa.Buttons.ButtonStrategy.PrevouisFromPlayer;
-import com.example.asma3masiqa.Controllers.VisibilityController;
 import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerSong;
 
 public class PrevouiseListner extends OnClickListner {

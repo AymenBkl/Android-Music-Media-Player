@@ -1,6 +1,5 @@
 package com.example.asma3masiqa.Controllers;
 
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -12,12 +11,11 @@ import com.example.asma3masiqa.Buttons.FactoryButton.NextFromPlayerButton;
 import com.example.asma3masiqa.Buttons.FactoryButton.PauseFromPlayerButton;
 import com.example.asma3masiqa.Buttons.FactoryButton.PlayFromPlayerButton;
 import com.example.asma3masiqa.Buttons.FactoryButton.PrevouisFromPlayerFactory;
-import com.example.asma3masiqa.Buttons.SongManipulation.NextListner;
-import com.example.asma3masiqa.Buttons.SongManipulation.PauseListner;
-import com.example.asma3masiqa.Buttons.SongManipulation.PlayListner;
-import com.example.asma3masiqa.Buttons.SongManipulation.PrevouiseListner;
+import com.example.asma3masiqa.SongManipulation.NextListner;
+import com.example.asma3masiqa.SongManipulation.PauseListner;
+import com.example.asma3masiqa.SongManipulation.PlayListner;
+import com.example.asma3masiqa.SongManipulation.PrevouiseListner;
 import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerSong;
-import com.example.asma3masiqa.MediaPlayer.MySongsPlayLists;
 
 public class MediaPlayerButtonsController {
 

@@ -6,6 +6,7 @@ import android.widget.Button;
 
 import com.example.asma3masiqa.Buttons.ButtonStrategy.ButtonsStrategy;
 import com.example.asma3masiqa.Controllers.ButtonCommunicationsController;
+import com.example.asma3masiqa.Fragments.FragmentCommunication;
 import com.example.asma3masiqa.MediaPlayer.MySongsPlayLists;
 
 public class ResumeButton extends MyButtons {
@@ -23,7 +24,7 @@ public class ResumeButton extends MyButtons {
             public void onClick(View v) {
                 getMySongsPlayLists().resumeSong();
                 getButtonsStrategy().doOperation();
-                Log.i("lol","xdplaying from"+getId());
+                FragmentCommunication.getFragmentCommunication().setCurrentSong(getId());
             }
         };
     }
