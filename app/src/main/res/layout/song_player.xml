@@ -71,7 +71,8 @@
                 android:layout_height="60dp"
                 android:layout_toRightOf="@+id/pauseFromMediaLecture"
                 android:background="@drawable/next_icon"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp"
+                />
             <Button
                 android:id="@+id/prevFromMediaLecture"
                 android:layout_width="60dp"

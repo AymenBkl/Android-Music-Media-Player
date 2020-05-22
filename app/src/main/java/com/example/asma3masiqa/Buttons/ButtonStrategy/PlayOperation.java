@@ -6,14 +6,19 @@ import com.example.asma3masiqa.Controllers.VisibilityController;
 
 public class PlayOperation extends ButtonsStrategy {
 
+    private Button play;
+    private Button pause;
+    private Button resume;
     public PlayOperation(Button play, Button pause, Button resume) {
-        super(play, pause, resume);
+        this.play = play;
+        this.pause = pause;
+        this.resume = resume;
     }
 
     @Override
     public void doOperation() {
-        VisibilityController.visibilityToVisible(getPause());
-        VisibilityController.visibilityToGone(getResume());
-        VisibilityController.visibilityToGone(getPlay());
+        VisibilityController.visibilityToVisible(this.pause);
+        VisibilityController.visibilityToGone(this.resume);
+        VisibilityController.visibilityToGone(this.play);
     }
 }

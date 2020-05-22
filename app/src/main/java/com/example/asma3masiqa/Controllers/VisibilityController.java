@@ -18,13 +18,11 @@ public class VisibilityController {
     }
     public static void visibilityToInvisible(View view){
         if (view.getVisibility() == View.VISIBLE){
-            Log.i("lol","xdnextListnersss");
             view.setVisibility(View.INVISIBLE);
         }
     }
     public static void visibilityToIVisible(View view){
         if (view.getVisibility() == View.INVISIBLE){
-            Log.i("lol","xdnextListnersssssssssss");
             view.setVisibility(View.VISIBLE);
         }
     }

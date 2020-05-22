@@ -4,6 +4,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.asma3masiqa.Buttons.ButtonStrategy.NextFromPlayer;
+import com.example.asma3masiqa.Buttons.ButtonStrategy.PauseFromPlayer;
+import com.example.asma3masiqa.Buttons.ButtonStrategy.PlayFromPlayer;
+import com.example.asma3masiqa.Buttons.ButtonStrategy.PrevouisFromPlayer;
 import com.example.asma3masiqa.Buttons.FactoryButton.NextFromPlayerButton;
 import com.example.asma3masiqa.Buttons.FactoryButton.PauseFromPlayerButton;
 import com.example.asma3masiqa.Buttons.FactoryButton.PlayFromPlayerButton;
@@ -33,10 +37,10 @@ public class MediaPlayerButtonsController {
     }
 
     public void affectListners(MyMediaPlayerSong myMediaPlayerSong){
-        this.play.setOnClickListener(new PlayListner(myMediaPlayerSong,this.play,this.pause).onClickListeners());
-        this.pause.setOnClickListener(new PauseListner(myMediaPlayerSong,this.play,this.pause).onClickListeners());
-        this.next.setOnClickListener(new NextListner(myMediaPlayerSong,this.play,this.pause).onClickListeners());
-        this.prevouis.setOnClickListener(new PrevouiseListner(myMediaPlayerSong,this.play,this.pause).onClickListeners());
+        this.play.setOnClickListener(new PlayListner(myMediaPlayerSong,new PlayFromPlayer(this.play,this.pause)).onClickListeners());
+        this.pause.setOnClickListener(new PauseListner(myMediaPlayerSong,new PauseFromPlayer(this.play,this.pause)).onClickListeners());
+        this.next.setOnClickListener(new NextListner(myMediaPlayerSong,new NextFromPlayer(this.play,this.pause,myMediaPlayerSong.getMySongsPlayLists().sizeFile())).onClickListeners());
+        this.prevouis.setOnClickListener(new PrevouiseListner(myMediaPlayerSong,new PrevouisFromPlayer(this.play,this.pause)).onClickListeners());
 
     }
 
