@@ -20,7 +20,7 @@ import java.io.File;
 public class SongsList extends Fragment {
     private MyRecycleView myRecycleView;
     public SongsList(){
-        this.myRecycleView = new MyRecycleView(new File(Environment.getExternalStorageDirectory()+"/Music").listFiles());
+        this.myRecycleView = new MyRecycleView();
     }
     @Nullable
     @Override
@@ -39,5 +39,14 @@ public class SongsList extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
+    }
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
     }
 }

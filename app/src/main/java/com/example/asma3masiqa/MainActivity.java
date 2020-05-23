@@ -37,8 +37,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MyFragmentManager.getMyFragmentManager().setMainActivity(MainActivity.this);
-        MyFragmentManager.getMyFragmentManager().loadMainFragment();
+        MyFragmentManager.getMyFragmentManager(MainActivity.this).setMainActivity(MainActivity.this);
+
+        MyFragmentManager.getMyFragmentManager(MainActivity.this).loadMainFragment();
     }
 
 }

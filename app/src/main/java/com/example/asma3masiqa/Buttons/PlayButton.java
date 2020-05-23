@@ -24,11 +24,12 @@ public class PlayButton extends MyButtons {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getMySongsPlayLists().playSong(getId());
                 getButtonsStrategy().doOperation();
                 buttonCommunicationsController.checks(getId());
                 FragmentCommunication.getFragmentCommunication().setCurrentSong(getId());
-                MyFragmentManager.getMyFragmentManager().fromSongListToSongPlayer();
+                Log.i("lol","xd"+FragmentCommunication.getFragmentCommunication().getCurrentSong());
+                MyFragmentManager.getMyFragmentManager(null).fromSongListToSongPlayer();
+                Log.i("lol","xd"+getId());
             }
         };
     }

@@ -23,7 +23,7 @@ public class NextFromPlayer extends ButtonsStrategy{
     }
 
     public boolean checks(int position){
-        if (position < size ){
+        if (position < size - 1 ){
             return true;
         }
         else {

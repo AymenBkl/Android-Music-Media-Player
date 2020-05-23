@@ -1,6 +1,7 @@
 package com.example.asma3masiqa.MediaPlayer;
 
 
+import android.os.Environment;
 import android.os.HandlerThread;
 import android.util.Log;
 import android.widget.SeekBar;
@@ -17,14 +18,15 @@ public class MySongsPlayLists {
     private MyMediaPlayerAdapter myMediaPlayerAdapter;
     public File[] songs;
     private MyMedeaPlayerThread myMedeaPlayerThread;
+    private static MySongsPlayLists mySongsPlayLists;
 
-    public MySongsPlayLists(File[] songs){
+    private MySongsPlayLists(){
         this.myMediaPlayerAdapter = new MyMediaPlayerAdapter();
-        this.songs = songs;
+        this.songs = new File(Environment.getExternalStorageDirectory()+"/Music").listFiles();
         myMedeaPlayerThread = (MyMedeaPlayerThread) ThreadInializare.inizialize(new MyMedeaPlayerThread("MedeaPlayerThread"));
     }
 
-    public void playSong(final int position){
+    public void playSong(final int position, final MyMediaPlayerSong myMediaPlayerSong){
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
@@ -33,6 +35,8 @@ public class MySongsPlayLists {
             }
         };
          myMedeaPlayerThread.assignTask(runnable);
+         myMediaPlayerSong.seekBarManipulaition();
+
     }
     public void pauseSong(){
         Runnable runnable = new Runnable() {
@@ -73,5 +77,16 @@ public class MySongsPlayLists {
 
     public int sizeFile(){
         return this.songs.length;
+    }
+
+    public static MySongsPlayLists getMySongsPlayLists(){
+        if (mySongsPlayLists == null){
+            synchronized (MySongsPlayLists.class){
+                if (mySongsPlayLists == null){
+                    mySongsPlayLists = new MySongsPlayLists();
+                }
+            }
+        }
+        return mySongsPlayLists;
     }
 }

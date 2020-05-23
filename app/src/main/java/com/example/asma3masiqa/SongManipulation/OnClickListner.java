@@ -3,6 +3,7 @@ package com.example.asma3masiqa.SongManipulation;
 import android.view.View;
 
 import com.example.asma3masiqa.Buttons.ButtonStrategy.ButtonsStrategy;
+import com.example.asma3masiqa.Fragments.FragmentCommunication;
 import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerSong;
 
 public abstract class OnClickListner  {
@@ -12,7 +13,7 @@ public abstract class OnClickListner  {
 
     public OnClickListner(MyMediaPlayerSong myMediaPlayerSong,ButtonsStrategy buttonsStrategy){
         this.myMediaPlayerSong = myMediaPlayerSong;
-        this.currentSong = 16;
+        this.currentSong = FragmentCommunication.getFragmentCommunication().getCurrentSong();
         this.buttonsStrategy = buttonsStrategy;
     }
     public abstract View.OnClickListener onClickListeners();

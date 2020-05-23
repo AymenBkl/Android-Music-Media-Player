@@ -26,9 +26,8 @@ public class SongsListAdapter extends RecyclerView.Adapter<SongsListAdapter.Song
     private ButtonsController buttonsController;
     private ButtonCommunicationsController buttonCommunicationsController;
 
-    public SongsListAdapter(File[] files){
-        this.mySongsPlayLists = new MySongsPlayLists(files);
-        this.files = files;
+    public SongsListAdapter(){
+        this.mySongsPlayLists = MySongsPlayLists.getMySongsPlayLists();
         this.buttonsController = new ButtonsController();
         this.buttonCommunicationsController = new ButtonCommunicationsController(this.buttonsController);
     }
@@ -47,7 +46,7 @@ public class SongsListAdapter extends RecyclerView.Adapter<SongsListAdapter.Song
 
     @Override
     public int getItemCount() {
-        return files.length;
+        return this.mySongsPlayLists.sizeFile();
     }
 
     public class SongViewHolder extends RecyclerView.ViewHolder {

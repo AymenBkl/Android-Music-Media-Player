@@ -41,4 +41,27 @@ public class SongPlayer extends Fragment {
             myMediaPlayerSong.getMySongsPlayLists().pauseSong();
         }
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (myMediaPlayerSong != null){
+            myMediaPlayerSong.playMySong(FragmentCommunication.getFragmentCommunication().getCurrentSong());
+        }
+    }
+
+    @Nullable
+    @Override
+    public View getView() {
+        return view;
+    }
+
+    public void setView(View view) {
+        this.view = view;
+    }
 }

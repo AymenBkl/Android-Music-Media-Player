@@ -3,19 +3,20 @@ package com.example.asma3masiqa.SeekBar;
 import android.util.Log;
 
 import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerAdapter;
+import com.example.asma3masiqa.TextViews.TextViewsFactory.TextViews.MyTextView;
+import com.example.asma3masiqa.TextViews.TextViewsFactory.TextViews.MyTextViewAdapter;
 
 public class SeekBarAdapter {
     private Seekbar seekBar;
 
     public SeekBarAdapter(Seekbar seekBar){
+
         this.seekBar = seekBar;
     }
 
-    public void mainFunction(MyMediaPlayerAdapter myMediaPlayerAdapter) throws InterruptedException {
-        Thread.sleep(1000);
+    public void mainFunction(MyMediaPlayerAdapter myMediaPlayerAdapter, MyTextViewAdapter myTextViewAdapter) {
         final int interval = 10;
         int totalDuration = myMediaPlayerAdapter.getDuration();
-        Log.i("lol","xd"+totalDuration);
         int currentPosition = 0;
         seekBar.setMax(totalDuration/interval);
 

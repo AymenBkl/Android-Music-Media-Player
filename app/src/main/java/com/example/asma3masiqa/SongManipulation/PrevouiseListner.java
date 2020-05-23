@@ -4,6 +4,7 @@ import android.view.View;
 
 import com.example.asma3masiqa.Buttons.ButtonStrategy.ButtonsStrategy;
 import com.example.asma3masiqa.Buttons.ButtonStrategy.PrevouisFromPlayer;
+import com.example.asma3masiqa.Fragments.FragmentCommunication;
 import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerSong;
 
 public class PrevouiseListner extends OnClickListner {
@@ -16,7 +17,7 @@ public class PrevouiseListner extends OnClickListner {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                        setCurrentSong(FragmentCommunication.getFragmentCommunication().getCurrentSong());
                         if (((PrevouisFromPlayer) getButtonsStrategy()).checks(getCurrentSong())) {
                             getMyMediaPlayerSong().playMySong(getCurrentSong()-1);
                             setCurrentSong(getCurrentSong()-1);

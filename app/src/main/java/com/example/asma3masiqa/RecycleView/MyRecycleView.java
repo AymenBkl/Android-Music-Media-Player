@@ -15,8 +15,8 @@ public class MyRecycleView {
     private RecyclerView recyclerView;
     private SongsListAdapter songsListAdapter;
 
-    public MyRecycleView(File[] files){
-        this.songsListAdapter = new SongsListAdapter(files);
+    public MyRecycleView(){
+        this.songsListAdapter = new SongsListAdapter();
     }
     public void setRecyclerView(View view,Context context){
         this.recyclerView = (RecyclerView ) view.findViewById(R.id.myrecyle);

@@ -9,6 +9,7 @@ import com.example.asma3masiqa.MainActivity;
 import com.example.asma3masiqa.R;
 import com.example.asma3masiqa.SeekBar.SeekBarAdapter;
 import com.example.asma3masiqa.SeekBar.Seekbar;
+import com.example.asma3masiqa.TextViews.TextViewsFactory.TextViews.MyTextViewAdapter;
 
 import java.io.File;
 
@@ -17,34 +18,29 @@ public class MyMediaPlayerSong {
     private MySongsPlayLists mySongsPlayLists;
     private SeekBarAdapter seekBarAdapter;
     private MediaPlayerButtonsController mediaPlayerButtonsController;
+    private MyTextViewAdapter myTextViewAdapter;
 
     public MyMediaPlayerSong(View view){
-        this.mySongsPlayLists = new MySongsPlayLists(new File(Environment.getExternalStorageDirectory()+"/Music").listFiles());
+        this.mySongsPlayLists = MySongsPlayLists.getMySongsPlayLists();
         this.seekBarAdapter = new SeekBarAdapter(new Seekbar(view,this.mySongsPlayLists.getMyMediaPlayerAdapter()));
         this.mediaPlayerButtonsController = new MediaPlayerButtonsController(view,this);
+        this.myTextViewAdapter = new MyTextViewAdapter(view);
     }
 
-    private void seekBarManipulaition(){
+    public void seekBarManipulaition(){
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                try {
-                    seekBarAdapter.mainFunction(mySongsPlayLists.getMyMediaPlayerAdapter());
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                    seekBarAdapter.mainFunction(mySongsPlayLists.getMyMediaPlayerAdapter(),myTextViewAdapter);
+
             }
         };
         this.seekBarAdapter.assignTask(runnable);
     }
-    private void playSong(int position){
-        mySongsPlayLists.playSong(position);
 
-    }
 
     public void playMySong(int position){
-        playSong(position);
-        seekBarManipulaition();
+        mySongsPlayLists.playSong(position,this);
 
     }
 
