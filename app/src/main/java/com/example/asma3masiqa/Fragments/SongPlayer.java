@@ -22,7 +22,9 @@ public class SongPlayer extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view =  inflater.inflate(R.layout.song_player,container,false);
-        myMediaPlayerSong = new MyMediaPlayerSong(view);
+        if (myMediaPlayerSong == null) {
+            myMediaPlayerSong = new MyMediaPlayerSong(view);
+        }
         return view;
     }
 

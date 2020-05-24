@@ -1,5 +1,6 @@
 package com.example.asma3masiqa.TextViews.TextViewsFactory.TextViews;
 
+import android.util.Log;
 import android.view.View;
 
 public class MyTextViewAdapter {
@@ -24,9 +25,14 @@ public class MyTextViewAdapter {
         this.currentPositionTextView.setText(text);
     }
 
-    public final void setTexts(String text1,String text2){
-        setSongName(text2);
-        setSongDurationTextView(text1);
-        setCurrentPositionTextView(text1);
+    public void setTexts(final String text1,final String text2,final String text3){
+
+
+                Log.i("lol","xd"+Thread.currentThread());
+                setSongName("XD");
+                setSongDurationTextView("lol");
+                setCurrentPositionTextView("mm");
+
+
     }
 }

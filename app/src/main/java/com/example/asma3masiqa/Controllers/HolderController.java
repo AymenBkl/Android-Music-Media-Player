@@ -15,6 +15,8 @@ public class HolderController {
 
     public void fragment1ToFragment2(){
         this.holderFragment1Controler.toGone();
+        this.holderFragment2Controller.changeWeightOriginal();
+        this.holderFragment1Controler.changeWeightOriginal();
         this.holderFragment2Controller.toVisible();
     }
 

@@ -1,47 +1,39 @@
 package com.example.asma3masiqa.MediaPlayer;
 
-import android.os.Environment;
-import android.util.Log;
 import android.view.View;
 
 import com.example.asma3masiqa.Controllers.MediaPlayerButtonsController;
-import com.example.asma3masiqa.MainActivity;
-import com.example.asma3masiqa.R;
-import com.example.asma3masiqa.SeekBar.SeekBarAdapter;
-import com.example.asma3masiqa.SeekBar.Seekbar;
+import com.example.asma3masiqa.Interaction.InteractionAdapter;
+import com.example.asma3masiqa.Interaction.Interaction;
 import com.example.asma3masiqa.TextViews.TextViewsFactory.TextViews.MyTextViewAdapter;
-
-import java.io.File;
 
 public class MyMediaPlayerSong {
 
     private MySongsPlayLists mySongsPlayLists;
-    private SeekBarAdapter seekBarAdapter;
+    private InteractionAdapter interactionAdapter;
     private MediaPlayerButtonsController mediaPlayerButtonsController;
-    private MyTextViewAdapter myTextViewAdapter;
 
     public MyMediaPlayerSong(View view){
         this.mySongsPlayLists = MySongsPlayLists.getMySongsPlayLists();
-        this.seekBarAdapter = new SeekBarAdapter(new Seekbar(view,this.mySongsPlayLists.getMyMediaPlayerAdapter()));
+        this.interactionAdapter = new InteractionAdapter(new Interaction(view,this.mySongsPlayLists.getMyMediaPlayerAdapter()));
         this.mediaPlayerButtonsController = new MediaPlayerButtonsController(view,this);
-        this.myTextViewAdapter = new MyTextViewAdapter(view);
+
     }
 
     public void seekBarManipulaition(){
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                    seekBarAdapter.mainFunction(mySongsPlayLists.getMyMediaPlayerAdapter(),myTextViewAdapter);
+                    interactionAdapter.mainFunction(mySongsPlayLists.getMyMediaPlayerAdapter());
 
             }
         };
-        this.seekBarAdapter.assignTask(runnable);
+        this.interactionAdapter.assignTask(runnable);
     }
 
 
     public void playMySong(int position){
         mySongsPlayLists.playSong(position,this);
-
     }
 
     public MySongsPlayLists getMySongsPlayLists() {

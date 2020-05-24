@@ -1,21 +1,10 @@
 package com.example.asma3masiqa.Fragments;
-
-import android.os.Environment;
-import android.util.Log;
-import android.widget.LinearLayout;
-
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
-import com.example.asma3masiqa.Controllers.BasicHolderControler;
 import com.example.asma3masiqa.Controllers.HolderController;
-import com.example.asma3masiqa.Controllers.HolderFragment1Controler;
-import com.example.asma3masiqa.Controllers.HolderFragment2Controller;
-import com.example.asma3masiqa.Controllers.InterctionHolderController;
 import com.example.asma3masiqa.MainActivity;
 import com.example.asma3masiqa.R;
 
-import java.io.File;
 
 public class MyFragmentManager {
 
@@ -49,9 +38,6 @@ public class MyFragmentManager {
 
     public void fromSongPlayerToListSong(){
         this.holderController.fragment2toFragment1();
-        this.basicHolderControler.changeWeight();
-        this.basicHolderControler.toGone();
-        this.interctionHolderController.changeWeight();
         this.songsList.onResume();
     }
 

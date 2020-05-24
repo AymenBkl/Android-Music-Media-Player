@@ -1,4 +1,4 @@
-package com.example.asma3masiqa.SeekBar;
+package com.example.asma3masiqa.Interaction;
 
 import android.view.View;
 import android.widget.SeekBar;

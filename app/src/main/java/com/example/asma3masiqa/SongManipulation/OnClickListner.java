@@ -1,5 +1,6 @@
 package com.example.asma3masiqa.SongManipulation;
 
+import android.util.Log;
 import android.view.View;
 
 import com.example.asma3masiqa.Buttons.ButtonStrategy.ButtonsStrategy;
@@ -31,6 +32,7 @@ public abstract class OnClickListner  {
     }
 
     public void setCurrentSong(int currentSong) {
+
         this.currentSong = currentSong;
     }
 

@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.asma3masiqa.Buttons.ButtonStrategy.ButtonsStrategy;
+import com.example.asma3masiqa.Buttons.ButtonStrategy.DropDownStrategy;
 import com.example.asma3masiqa.Controllers.ButtonCommunicationsController;
 import com.example.asma3masiqa.Fragments.FragmentCommunication;
 import com.example.asma3masiqa.Fragments.MyFragmentManager;
@@ -24,12 +25,11 @@ public class PlayButton extends MyButtons {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FragmentCommunication.getFragmentCommunication().setCurrentSong(getId());
+                MyFragmentManager.getMyFragmentManager(null).fromSongListToSongPlayer();
+                DropDownStrategy.fromSongListToSongPlayer();
                 getButtonsStrategy().doOperation();
                 buttonCommunicationsController.checks(getId());
-                FragmentCommunication.getFragmentCommunication().setCurrentSong(getId());
-                Log.i("lol","xd"+FragmentCommunication.getFragmentCommunication().getCurrentSong());
-                MyFragmentManager.getMyFragmentManager(null).fromSongListToSongPlayer();
-                Log.i("lol","xd"+getId());
             }
         };
     }

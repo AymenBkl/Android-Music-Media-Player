@@ -20,7 +20,7 @@ public class DropDownListner extends OnClickListner {
             @Override
             public void onClick(View v) {
                 MyFragmentManager.getMyFragmentManager(null).fromSongPlayerToListSong();
-                Log.i("lol","xdimclicked");
+                getButtonsStrategy().doOperation();
             }
         };
     }

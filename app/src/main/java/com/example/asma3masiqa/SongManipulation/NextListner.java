@@ -6,6 +6,7 @@ import android.view.View;
 import com.example.asma3masiqa.Buttons.ButtonStrategy.ButtonsStrategy;
 import com.example.asma3masiqa.Buttons.ButtonStrategy.NextFromPlayer;
 import com.example.asma3masiqa.Fragments.FragmentCommunication;
+import com.example.asma3masiqa.Fragments.MyFragmentManager;
 import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerSong;
 
 public class NextListner extends OnClickListner {
@@ -23,10 +24,10 @@ public class NextListner extends OnClickListner {
             public void onClick(View v) {
                 setCurrentSong(FragmentCommunication.getFragmentCommunication().getCurrentSong());
                 if (((NextFromPlayer) getButtonsStrategy()).checks(getCurrentSong())){
-                    getMyMediaPlayerSong().playMySong(getCurrentSong() + 1);
-                    setCurrentSong(getCurrentSong() + 1);
+                    setCurrentSong(getCurrentSong() +1);
+                    FragmentCommunication.getFragmentCommunication().setCurrentSong(getCurrentSong());
+                    MyFragmentManager.getMyFragmentManager(null).fromSongListToSongPlayer();
                     getButtonsStrategy().doOperation();
-                    Log.i("lol","xd"+getCurrentSong());
                 }
 
             }

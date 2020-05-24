@@ -10,6 +10,7 @@ public abstract class MainActivityViewControler {
 
     private LinearLayout holderFragment;
     public abstract void changeWeight();
+    public abstract void changeWeightOriginal();
 
     public void toGone(){
         VisibilityController.visibilityToGone(this.holderFragment);

@@ -32,10 +32,10 @@ public class MySongsPlayLists {
             public void run() {
                 myMediaPlayerAdapter.prepareSong(songs[position].getAbsolutePath());
                 myMediaPlayerAdapter.play();
+                myMediaPlayerSong.seekBarManipulaition();
             }
         };
          myMedeaPlayerThread.assignTask(runnable);
-         myMediaPlayerSong.seekBarManipulaition();
 
     }
     public void pauseSong(){

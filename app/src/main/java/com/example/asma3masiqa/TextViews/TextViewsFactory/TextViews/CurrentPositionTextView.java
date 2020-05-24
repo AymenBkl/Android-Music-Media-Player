@@ -1,5 +1,6 @@
 package com.example.asma3masiqa.TextViews.TextViewsFactory.TextViews;
 
+import android.util.Log;
 import android.view.View;
 
 import com.example.asma3masiqa.TextViews.TextViewsFactory.SongCurrentPositionFactory;
