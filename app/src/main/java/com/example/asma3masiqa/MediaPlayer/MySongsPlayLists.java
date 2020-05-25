@@ -30,9 +30,14 @@ public class MySongsPlayLists {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                myMediaPlayerAdapter.prepareSong(songs[position].getAbsolutePath());
-                myMediaPlayerAdapter.play();
-                myMediaPlayerSong.seekBarManipulaition();
+                try {
+                    myMediaPlayerAdapter.prepareSong(songs[position].getAbsolutePath());
+                    myMediaPlayerAdapter.play();
+                    myMediaPlayerSong.seekBarManipulaition();
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         };
          myMedeaPlayerThread.assignTask(runnable);

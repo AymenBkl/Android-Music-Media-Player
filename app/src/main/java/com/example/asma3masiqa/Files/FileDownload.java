@@ -4,6 +4,7 @@ import android.app.DownloadManager;
 import android.content.Context;
 import android.content.IntentFilter;
 import android.os.ConditionVariable;
+import android.util.Log;
 
 import com.example.asma3masiqa.MainActivity;
 

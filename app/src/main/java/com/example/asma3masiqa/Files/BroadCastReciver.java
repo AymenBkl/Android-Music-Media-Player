@@ -16,7 +16,6 @@ public class BroadCastReciver {
             public void onReceive(Context context, Intent intent) {
                 long reference= intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID,-1);
                 if (downloadId == reference){
-                    Log.i("lol","xdfileDownloaded"+downloadId);
                     SongDownloadHandler songDownloadHandler = new SongDownloadHandler(activity);
                     songDownloadHandler.doOperation();
                 }

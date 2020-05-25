@@ -56,6 +56,7 @@ public class MyFragmentManager {
         mainActivity = mainActivitys;
     }
 
-
-
+    public static MainActivity getMainActivity() {
+        return mainActivity;
+    }
 }
