@@ -44,12 +44,7 @@ public class MyMediaPlayerAdapter {
     }
 
     public int currentPosition(){
-        if (mediaPlayer.isPlaying()){
             return mediaPlayer.getCurrentPosition();
-        }
-        else {
-            return 0;
-        }
     }
 
     public void goToPosition(int position){

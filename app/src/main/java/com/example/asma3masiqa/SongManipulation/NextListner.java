@@ -8,6 +8,8 @@ import com.example.asma3masiqa.Buttons.ButtonStrategy.NextFromPlayer;
 import com.example.asma3masiqa.Fragments.FragmentCommunication;
 import com.example.asma3masiqa.Fragments.MyFragmentManager;
 import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerSong;
+import com.example.asma3masiqa.SongInteractions.RandomizeSong;
+import com.example.asma3masiqa.SongInteractions.SongShuffled;
 
 public class NextListner extends OnClickListner {
     private int size;
@@ -23,8 +25,16 @@ public class NextListner extends OnClickListner {
             @Override
             public void onClick(View v) {
                 setCurrentSong(FragmentCommunication.getFragmentCommunication().getCurrentSong());
-                if (((NextFromPlayer) getButtonsStrategy()).checks(getCurrentSong())){
-                    setCurrentSong(getCurrentSong() +1);
+                if (!SongShuffled.getSongShuffled().getShuffled()) {
+                    if (((NextFromPlayer) getButtonsStrategy()).checks(getCurrentSong())) {
+                        setCurrentSong(getCurrentSong() + 1);
+                        FragmentCommunication.getFragmentCommunication().setCurrentSong(getCurrentSong());
+                        MyFragmentManager.getMyFragmentManager(null).fromSongListToSongPlayer();
+                        getButtonsStrategy().doOperation();
+                    }
+                }
+                else {
+                    setCurrentSong(RandomizeSong.getSongRandom(getMyMediaPlayerSong().getMySongsPlayLists().sizeFile()));
                     FragmentCommunication.getFragmentCommunication().setCurrentSong(getCurrentSong());
                     MyFragmentManager.getMyFragmentManager(null).fromSongListToSongPlayer();
                     getButtonsStrategy().doOperation();

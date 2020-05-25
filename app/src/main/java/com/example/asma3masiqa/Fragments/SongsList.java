@@ -27,21 +27,26 @@ public class SongsList extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.mylist,container,false);
         this.myRecycleView.setRecyclerView(view,getActivity());
-
         return view;
     }
 
     @Override
     public void onAttach(Context context) {
+        Log.i("lol","xdnavigation");
+
         super.onAttach(context);
     }
 
     @Override
     public void onDetach() {
+
         super.onDetach();
+        Log.i("lol","xddetached");
+
     }
     @Override
     public void onPause() {
+
         super.onPause();
     }
 

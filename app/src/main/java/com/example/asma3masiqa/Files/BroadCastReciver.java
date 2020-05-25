@@ -8,6 +8,8 @@ import android.util.Log;
 
 import com.example.asma3masiqa.MainActivity;
 
+import java.io.File;
+
 public class BroadCastReciver {
 
     public static BroadcastReceiver setBroadcatReciverForDownload(final long downloadId, final MainActivity activity,final FileE file){
@@ -18,6 +20,7 @@ public class BroadCastReciver {
                 if (downloadId == reference){
                     SongDownloadHandler songDownloadHandler = new SongDownloadHandler(activity);
                     songDownloadHandler.doOperation();
+                    FileDownload.getFileDownload(null).notifysAll();
                 }
             }
         };

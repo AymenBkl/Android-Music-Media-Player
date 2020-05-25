@@ -1,5 +1,6 @@
 package com.example.asma3masiqa.Interaction;
 
+import android.util.Log;
 import android.widget.SeekBar;
 
 import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerAdapter;
@@ -17,12 +18,11 @@ public class SeekBarListner {
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-
+                seekBar.setProgress(myMediaPlayerAdapter.currentPosition());
             }
     });
 }

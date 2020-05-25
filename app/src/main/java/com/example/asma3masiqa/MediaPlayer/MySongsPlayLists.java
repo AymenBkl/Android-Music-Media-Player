@@ -6,24 +6,40 @@ import android.os.HandlerThread;
 import android.util.Log;
 import android.widget.SeekBar;
 
+import com.example.asma3masiqa.Files.FileDownload;
 import com.example.asma3masiqa.Files.FileE;
+import com.example.asma3masiqa.MyDrawerLayout.SortOption;
+import com.example.asma3masiqa.MySongsFiles.MySongsCollections;
+import com.example.asma3masiqa.MySongsFiles.MySortAdapter;
+import com.example.asma3masiqa.Obvserver.Obvserver;
 import com.example.asma3masiqa.Threads.MyMedeaPlayerThread;
 import com.example.asma3masiqa.Threads.ThreadInializare;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
-public class MySongsPlayLists {
+public class MySongsPlayLists implements Obvserver {
 
     private MyMediaPlayerAdapter myMediaPlayerAdapter;
-    public File[] songs;
+    public List<File> songs;
     private MyMedeaPlayerThread myMedeaPlayerThread;
     private static MySongsPlayLists mySongsPlayLists;
+    private MySortAdapter mySortAdapter;
 
     private MySongsPlayLists(){
         this.myMediaPlayerAdapter = new MyMediaPlayerAdapter();
-        this.songs = new File(Environment.getExternalStorageDirectory()+"/Music").listFiles();
+        this.mySortAdapter = new MySortAdapter();
+        this.songs = mySortAdapter.getMySongs(SortOption.getSortOption().getSortoption());
+        for(File song : songs) {
+            Log.i("lol", "xdnavigation"+song.getName()+SortOption.getSortOption().getSortoption());
+        }
         myMedeaPlayerThread = (MyMedeaPlayerThread) ThreadInializare.inizialize(new MyMedeaPlayerThread("MedeaPlayerThread"));
+        FileDownload.getFileDownload(null).registerObvserver(this);
+
+
     }
 
     public void playSong(final int position, final MyMediaPlayerSong myMediaPlayerSong){
@@ -31,7 +47,7 @@ public class MySongsPlayLists {
             @Override
             public void run() {
                 try {
-                    myMediaPlayerAdapter.prepareSong(songs[position].getAbsolutePath());
+                    myMediaPlayerAdapter.prepareSong(songs.get(position).getAbsolutePath());
                     myMediaPlayerAdapter.play();
                     myMediaPlayerSong.seekBarManipulaition();
                 }
@@ -81,7 +97,7 @@ public class MySongsPlayLists {
     }
 
     public int sizeFile(){
-        return this.songs.length;
+        return this.songs.size();
     }
 
     public static MySongsPlayLists getMySongsPlayLists(){
@@ -93,5 +109,14 @@ public class MySongsPlayLists {
             }
         }
         return mySongsPlayLists;
+    }
+
+    @Override
+    public void notifys() {
+        this.songs = mySortAdapter.getMySongs(SortOption.getSortOption().getSortoption());
+        for(File song : songs) {
+            Log.i("lol", "xdnavigation"+song.getName());
+        }
+
     }
 }

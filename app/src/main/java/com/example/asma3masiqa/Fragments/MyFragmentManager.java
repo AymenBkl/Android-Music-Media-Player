@@ -1,12 +1,15 @@
 package com.example.asma3masiqa.Fragments;
+import android.util.Log;
+
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.example.asma3masiqa.Controllers.HolderController;
 import com.example.asma3masiqa.MainActivity;
+import com.example.asma3masiqa.Obvserver.Obvserver;
 import com.example.asma3masiqa.R;
 
 
-public class MyFragmentManager {
+public class MyFragmentManager implements Obvserver {
 
     private static MainActivity mainActivity;
     private SongPlayer songPlayer;
@@ -14,7 +17,7 @@ public class MyFragmentManager {
     private static MyFragmentManager myFragmentManager;
     private HolderController holderController;
 
-    private MyFragmentManager(MainActivity mainActivitys){
+    private MyFragmentManager(MainActivity mainActivitys) {
         mainActivity = mainActivitys;
         this.songPlayer = new SongPlayer();
         this.songsList = new  SongsList();
@@ -40,6 +43,15 @@ public class MyFragmentManager {
         this.holderController.fragment2toFragment1();
         this.songsList.onResume();
     }
+    private void removeFragments(){
+        FragmentManager fragmentManager = this.mainActivity.getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.detach(this.songsList);
+        fragmentTransaction.detach(this.songPlayer);
+        fragmentTransaction.attach(this.songsList);
+        fragmentTransaction.attach(this.songPlayer);
+        fragmentTransaction.commit();
+   }
 
     public static MyFragmentManager getMyFragmentManager(MainActivity mainActivity){
         if (myFragmentManager == null){
@@ -58,5 +70,10 @@ public class MyFragmentManager {
 
     public static MainActivity getMainActivity() {
         return mainActivity;
+    }
+
+    @Override
+    public void notifys() {
+        removeFragments();
     }
 }

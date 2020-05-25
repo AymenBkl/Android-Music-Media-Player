@@ -1,5 +1,6 @@
 package com.example.asma3masiqa.Dialogs.DownloadMenu;
 
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -19,6 +20,8 @@ public class DownloadMenu{
     private InternetPermisions internetPermisions;
     public DownloadMenu(MainActivity mainActivity){
         this.mainActivity = mainActivity;
+
+        this.downloadFromDialog = new DownloadFromDialog(this.mainActivity);
     }
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater downloadMenu = this.mainActivity.getMenuInflater();

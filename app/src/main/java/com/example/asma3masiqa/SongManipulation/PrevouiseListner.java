@@ -8,10 +8,12 @@ import com.example.asma3masiqa.Buttons.ButtonStrategy.PrevouisFromPlayer;
 import com.example.asma3masiqa.Fragments.FragmentCommunication;
 import com.example.asma3masiqa.Fragments.MyFragmentManager;
 import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerSong;
+import com.example.asma3masiqa.SongInteractions.RandomizeSong;
+import com.example.asma3masiqa.SongInteractions.SongShuffled;
 
 public class PrevouiseListner extends OnClickListner {
     public PrevouiseListner(MyMediaPlayerSong myMediaPlayerSong, ButtonsStrategy buttonsStrategy) {
-        super(myMediaPlayerSong,buttonsStrategy);
+        super(myMediaPlayerSong, buttonsStrategy);
     }
 
     @Override
@@ -19,18 +21,35 @@ public class PrevouiseListner extends OnClickListner {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                        setCurrentSong(FragmentCommunication.getFragmentCommunication().getCurrentSong());
-                        if (((PrevouisFromPlayer) getButtonsStrategy()).checks(getCurrentSong())) {
-                            setCurrentSong(getCurrentSong() -1);
-                            FragmentCommunication.getFragmentCommunication().setCurrentSong(getCurrentSong());
-                            MyFragmentManager.getMyFragmentManager(null).fromSongListToSongPlayer();
+                setCurrentSong(FragmentCommunication.getFragmentCommunication().getCurrentSong());
+                if (!SongShuffled.getSongShuffled().getShuffled()) {
+                    if (((PrevouisFromPlayer) getButtonsStrategy()).checks(getCurrentSong())) {
+                        setCurrentSong(getCurrentSong() - 1);
+                        FragmentCommunication.getFragmentCommunication().setCurrentSong(getCurrentSong());
+                        MyFragmentManager.getMyFragmentManager(null).fromSongListToSongPlayer();
 
-                            getButtonsStrategy().doOperation();
-                        }
-
+                        getButtonsStrategy().doOperation();
                     }
-                };
 
-            }
+                }
+                else {
+                    setCurrentSong(RandomizeSong.getSongRandom(getMyMediaPlayerSong().getMySongsPlayLists().sizeFile()));
+                    FragmentCommunication.getFragmentCommunication().setCurrentSong(getCurrentSong());
+                    MyFragmentManager.getMyFragmentManager(null).fromSongListToSongPlayer();
+                    getButtonsStrategy().doOperation();
+                }
+
+
+
+            };
+
+
+
+
+        };
+
+    }
 
 }
+
+

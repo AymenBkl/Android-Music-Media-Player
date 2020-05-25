@@ -20,6 +20,8 @@ public class StoragePermisionListner extends PermisionTedListner {
         return new PermissionListener() {
             @Override
             public void onPermissionGranted() {
+                Log.i("lol","xdgranted");
+
                 MyFragmentManager.getMyFragmentManager(mainActivity).loadMainFragment();
             }
 

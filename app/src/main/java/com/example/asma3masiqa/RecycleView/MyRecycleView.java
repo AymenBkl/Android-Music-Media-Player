@@ -2,6 +2,7 @@ package com.example.asma3masiqa.RecycleView;
 
 import android.content.Context;
 import android.os.ConditionVariable;
+import android.util.Log;
 import android.view.View;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -16,6 +17,7 @@ public class MyRecycleView {
     private SongsListAdapter songsListAdapter;
 
     public MyRecycleView(){
+        Log.i("lol","xdcreatedagain");
         this.songsListAdapter = new SongsListAdapter();
     }
     public void setRecyclerView(View view,Context context){

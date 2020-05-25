@@ -2,6 +2,7 @@ package com.example.asma3masiqa;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -23,6 +24,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -38,6 +41,7 @@ import com.example.asma3masiqa.Fragments.SongPlayer;
 import com.example.asma3masiqa.Fragments.SongsList;
 import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerSong;
 import com.example.asma3masiqa.MediaPlayer.MySongsPlayLists;
+import com.example.asma3masiqa.MyDrawerLayout.MyDrawerLayout;
 import com.example.asma3masiqa.Permisions.InternetPermisions;
 import com.example.asma3masiqa.Permisions.StoragePermissions;
 import com.example.asma3masiqa.Threads.DownloadThread;
@@ -56,14 +60,22 @@ import pub.devrel.easypermissions.PermissionRequest;
 public class MainActivity extends AppCompatActivity {
     public Handler handler;
     private DownloadMenu downloadMenu;
+    private ActionBarDrawerToggle actionBarDrawerToggle;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         handler = new Handler();
         this.downloadMenu = new DownloadMenu(MainActivity.this);
         StoragePermissions storagePermissions = new StoragePermissions(MainActivity.this);
         storagePermissions.showDialog();
+        this.actionBarDrawerToggle = new MyDrawerLayout(MainActivity.this).getActionBarDrawerToggle();
     }
 
     @Override
@@ -75,4 +87,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         return this.downloadMenu.onOptionsItemSelected(item);
     }
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        this.actionBarDrawerToggle.syncState();
+    }
+
 }

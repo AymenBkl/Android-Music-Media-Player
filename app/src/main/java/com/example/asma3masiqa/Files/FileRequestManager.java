@@ -5,6 +5,8 @@ import android.net.Uri;
 import android.os.Environment;
 import android.util.Log;
 
+import com.example.asma3masiqa.Threads.ThreadInializare;
+
 public class FileRequestManager {
 
     public static DownloadManager.Request buildRequest(Uri uri, String name){
@@ -13,7 +15,6 @@ public class FileRequestManager {
                 .setDescription("Downloading")
                 .setDestinationInExternalPublicDir(Environment.DIRECTORY_MUSIC,name)
                 .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-        Log.i("lol","xd"+uri);
         return request;
     }
 }

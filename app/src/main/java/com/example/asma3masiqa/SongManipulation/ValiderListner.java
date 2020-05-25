@@ -32,8 +32,9 @@ public class ValiderListner  {
             public void onClick(View v) {
                 dialog.dismiss();
                 String path = String.valueOf(uri.getText());
+                String extension = path.substring(path.lastIndexOf("."));
                 Uri myuri = Uri.parse(path);
-                String name = String.valueOf(nameFile.getText());
+                String name = String.valueOf(nameFile.getText())+extension;
                 FileE file = new FileE(name,55f,path,myuri);
                 downloadThread.assignTask(fileDownload.DownloadFile(file));
             }

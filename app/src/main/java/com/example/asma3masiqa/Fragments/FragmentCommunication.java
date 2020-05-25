@@ -6,7 +6,7 @@ public  class FragmentCommunication {
     private static FragmentCommunication fragmentCommunication;
 
     private FragmentCommunication(){
-        currentSong = 0;
+        currentSong = -1;
     }
 
     public int getCurrentSong() {
