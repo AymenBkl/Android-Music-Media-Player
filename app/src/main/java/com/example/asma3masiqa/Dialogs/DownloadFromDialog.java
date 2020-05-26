@@ -26,7 +26,6 @@ public class DownloadFromDialog extends DialogManager {
     @Override
     public void doOperation() {
             downloadDialog.show();
-
     }
 
 }

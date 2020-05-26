@@ -1,5 +1,4 @@
 package com.example.asma3masiqa.Fragments;
-import android.util.Log;
 
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -26,11 +25,12 @@ public class MyFragmentManager implements Obvserver {
     }
 
     public void loadMainFragment(){
+
         FragmentManager fragmentManager = this.mainActivity.getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.playlistfragment,this.songsList);
         fragmentTransaction.add(R.id.playfragment,this.songPlayer);
-        fragmentTransaction.commit();
+        fragmentTransaction.commitNowAllowingStateLoss();
 
     }
 
@@ -44,13 +44,22 @@ public class MyFragmentManager implements Obvserver {
         this.songsList.onResume();
     }
     private void removeFragments(){
+        this.holderController.original();
         FragmentManager fragmentManager = this.mainActivity.getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.detach(this.songsList);
-        fragmentTransaction.detach(this.songPlayer);
         fragmentTransaction.attach(this.songsList);
-        fragmentTransaction.attach(this.songPlayer);
         fragmentTransaction.commit();
+   }
+
+   public void detachFragment(){
+       FragmentManager fragmentManager = this.mainActivity.getSupportFragmentManager();
+       FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+       this.songPlayer.onDetach();
+       this.songsList.onDetach();
+       fragmentTransaction.detach(this.songsList);
+       fragmentTransaction.detach(this.songPlayer);
+       fragmentTransaction.commitAllowingStateLoss();
    }
 
     public static MyFragmentManager getMyFragmentManager(MainActivity mainActivity){

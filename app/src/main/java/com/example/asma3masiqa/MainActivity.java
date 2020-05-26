@@ -72,15 +72,13 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         handler = new Handler();
-        this.downloadMenu = new DownloadMenu(MainActivity.this);
-        StoragePermissions storagePermissions = new StoragePermissions(MainActivity.this);
-        storagePermissions.showDialog();
-        this.actionBarDrawerToggle = new MyDrawerLayout(MainActivity.this).getActionBarDrawerToggle();
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return this.downloadMenu.onCreateOptionsMenu(menu);
+
     }
 
     @Override
@@ -89,8 +87,31 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        this.downloadMenu = new DownloadMenu(MainActivity.this);
+        StoragePermissions storagePermissions = new StoragePermissions(MainActivity.this);
+        storagePermissions.showDialog();
         super.onPostCreate(savedInstanceState);
-        this.actionBarDrawerToggle.syncState();
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        MyFragmentManager.getMyFragmentManager(MainActivity.this).detachFragment();
+        super.onDestroy();
     }
 
 }

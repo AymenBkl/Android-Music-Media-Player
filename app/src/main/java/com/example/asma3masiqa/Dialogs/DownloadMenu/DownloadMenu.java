@@ -1,10 +1,8 @@
 package com.example.asma3masiqa.Dialogs.DownloadMenu;
 
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.annotation.NonNull;
 
@@ -35,6 +33,8 @@ public class DownloadMenu{
         switch (item.getItemId()){
             case R.id.downloadmenu:
                 this.internetPermisions.showDialog();
+                return true;
+            case R.id.drawerLayout:
                 return true;
         }
         return this.mainActivity.onOptionsItemSelected(item);

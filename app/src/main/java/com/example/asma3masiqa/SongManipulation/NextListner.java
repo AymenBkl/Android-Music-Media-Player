@@ -30,6 +30,8 @@ public class NextListner extends OnClickListner {
                         setCurrentSong(getCurrentSong() + 1);
                         FragmentCommunication.getFragmentCommunication().setCurrentSong(getCurrentSong());
                         MyFragmentManager.getMyFragmentManager(null).fromSongListToSongPlayer();
+                        FragmentCommunication.getFragmentCommunication().setPlay(true);
+
                         getButtonsStrategy().doOperation();
                     }
                 }

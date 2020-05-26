@@ -25,4 +25,10 @@ public class HolderController {
        this.holderFragment2Controller.changeWeight();
        this.holderFragment1Controler.changeWeight();
     }
+    public void original(){
+        this.holderFragment1Controler.toVisible();
+        this.holderFragment2Controller.toGone();
+        this.holderFragment2Controller.changeWeightOriginal();
+        this.holderFragment1Controler.changeWeightOriginal();
+    }
 }

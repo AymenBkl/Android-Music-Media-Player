@@ -2,8 +2,7 @@ package com.example.asma3masiqa.Fragments;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.Environment;
-import android.util.Log;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,16 +31,12 @@ public class SongsList extends Fragment {
 
     @Override
     public void onAttach(Context context) {
-        Log.i("lol","xdnavigation");
-
         super.onAttach(context);
     }
 
     @Override
     public void onDetach() {
-
         super.onDetach();
-        Log.i("lol","xddetached");
 
     }
     @Override

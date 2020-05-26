@@ -13,6 +13,7 @@ import com.example.asma3masiqa.MySongsFiles.MySongsCollections;
 import com.example.asma3masiqa.MySongsFiles.MySortAdapter;
 import com.example.asma3masiqa.Obvserver.Obvserver;
 import com.example.asma3masiqa.Threads.MyMedeaPlayerThread;
+import com.example.asma3masiqa.Threads.ThreadDestroyer;
 import com.example.asma3masiqa.Threads.ThreadInializare;
 
 import java.io.File;
@@ -33,9 +34,6 @@ public class MySongsPlayLists implements Obvserver {
         this.myMediaPlayerAdapter = new MyMediaPlayerAdapter();
         this.mySortAdapter = new MySortAdapter();
         this.songs = mySortAdapter.getMySongs(SortOption.getSortOption().getSortoption());
-        for(File song : songs) {
-            Log.i("lol", "xdnavigation"+song.getName()+SortOption.getSortOption().getSortoption());
-        }
         myMedeaPlayerThread = (MyMedeaPlayerThread) ThreadInializare.inizialize(new MyMedeaPlayerThread("MedeaPlayerThread"));
         FileDownload.getFileDownload(null).registerObvserver(this);
 
@@ -100,6 +98,10 @@ public class MySongsPlayLists implements Obvserver {
         return this.songs.size();
     }
 
+    public static void setMySongsPlayLists(MySongsPlayLists mySongsPlayLists) {
+        MySongsPlayLists.mySongsPlayLists = mySongsPlayLists;
+    }
+
     public static MySongsPlayLists getMySongsPlayLists(){
         if (mySongsPlayLists == null){
             synchronized (MySongsPlayLists.class){
@@ -114,9 +116,11 @@ public class MySongsPlayLists implements Obvserver {
     @Override
     public void notifys() {
         this.songs = mySortAdapter.getMySongs(SortOption.getSortOption().getSortoption());
-        for(File song : songs) {
-            Log.i("lol", "xdnavigation"+song.getName());
-        }
 
+    }
+
+    public void destroy(){
+        ThreadDestroyer.destroy(this.myMedeaPlayerThread);
+        mySongsPlayLists = null;
     }
 }

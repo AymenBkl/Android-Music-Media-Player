@@ -1,6 +1,4 @@
 package com.example.asma3masiqa.MyDrawerLayout;
-
-import android.util.Log;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
@@ -8,7 +6,6 @@ import androidx.annotation.NonNull;
 import com.example.asma3masiqa.Fragments.MyFragmentManager;
 import com.example.asma3masiqa.MainActivity;
 import com.example.asma3masiqa.MediaPlayer.MySongsPlayLists;
-import com.example.asma3masiqa.MySongsFiles.MySortAdapter;
 import com.example.asma3masiqa.Obvserver.Obvserver;
 import com.example.asma3masiqa.Obvserver.Subject;
 import com.example.asma3masiqa.R;
@@ -27,6 +24,7 @@ public class MyNavigationView  implements Subject {
         this.navigationView = (NavigationView) mainActivity.findViewById(R.id.songOptionsView);
         this.obvservers = new ArrayList<Obvserver>();
         this.obvservers.add(MyFragmentManager.getMyFragmentManager(mainActivity));
+        this.obvservers.add(MySongsPlayLists.getMySongsPlayLists());
     }
 
     public void setItemClick(){
@@ -34,6 +32,9 @@ public class MyNavigationView  implements Subject {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
+                    case R.id.byDefault:
+                        SortOption.getSortOption().setSortoption("none");
+                        notifysAll();
                     case R.id.byName :
                         SortOption.getSortOption().setSortoption("name");
                         notifysAll();

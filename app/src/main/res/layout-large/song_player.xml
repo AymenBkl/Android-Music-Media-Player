@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mysongLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="@drawable/mysongplayerbackground">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/dropDownButton"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/down"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/basicHolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/song"/>
+        <TextView
+            android:id="@+id/songname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Song Name"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/interecationHolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <SeekBar
+                android:id="@+id/myseekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/prevFromMediaLecture"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="55dp" />
+
+            <Button
+                android:id="@+id/playFromMediaLecture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/play_icon"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/pauseFromMediaLecture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/icon_pause" />
+
+            <Button
+                android:id="@+id/nextFromMediaLecture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/pauseFromMediaLecture"
+                android:background="@drawable/next_icon" />
+
+            <Button
+                android:id="@+id/prevFromMediaLecture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/pauseFromMediaLecture"
+                android:background="@drawable/prevouis_icon" />
+
+            <Button
+                android:id="@+id/replyfromMedeaPlayer"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="103dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/pauseFromMediaLecture"
+                android:background="@drawable/reply" />
+
+
+            <Button
+                android:id="@+id/shufflefromMedeaPlayer"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="-225dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/pauseFromMediaLecture"
+                android:background="@drawable/shuffle" />
+
+            <LinearLayout
+                android:id="@+id/songInfoHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/currentPosition"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:padding="20dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/songDuration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:padding="20dp"
+                    android:singleLine="true"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

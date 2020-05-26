@@ -2,6 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
         <item
+            android:id="@+id/byDefault"
+            android:icon="@drawable/sortbyname"
+            android:title="By Default"/>
+        <item
             android:id="@+id/byName"
             android:icon="@drawable/sortbyname"
             android:title="By Name"/>

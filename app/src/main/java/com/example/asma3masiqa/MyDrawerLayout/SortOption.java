@@ -7,7 +7,7 @@ public class SortOption {
     private static String sortoption ;
     private static SortOption sortOptions;
     private SortOption(){
-        sortoption = "name";
+        sortoption = "none";
     }
 
     public static String getSortoption() {

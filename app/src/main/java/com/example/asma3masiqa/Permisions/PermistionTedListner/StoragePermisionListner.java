@@ -5,6 +5,7 @@ import android.widget.Toast;
 
 import com.example.asma3masiqa.Fragments.MyFragmentManager;
 import com.example.asma3masiqa.MainActivity;
+import com.example.asma3masiqa.MyDrawerLayout.MyDrawerLayout;
 import com.gun0912.tedpermission.PermissionListener;
 
 import java.util.List;
@@ -20,8 +21,7 @@ public class StoragePermisionListner extends PermisionTedListner {
         return new PermissionListener() {
             @Override
             public void onPermissionGranted() {
-                Log.i("lol","xdgranted");
-
+                new MyDrawerLayout(mainActivity);
                 MyFragmentManager.getMyFragmentManager(mainActivity).loadMainFragment();
             }
 

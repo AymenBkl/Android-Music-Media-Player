@@ -27,7 +27,6 @@ public class PrevouiseListner extends OnClickListner {
                         setCurrentSong(getCurrentSong() - 1);
                         FragmentCommunication.getFragmentCommunication().setCurrentSong(getCurrentSong());
                         MyFragmentManager.getMyFragmentManager(null).fromSongListToSongPlayer();
-
                         getButtonsStrategy().doOperation();
                     }
 

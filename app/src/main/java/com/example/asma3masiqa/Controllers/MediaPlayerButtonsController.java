@@ -51,8 +51,8 @@ public class MediaPlayerButtonsController {
 
         this.play.setOnClickListener(new PlayListner(myMediaPlayerSong,new PlayFromPlayer(this.play,this.pause)).onClickListeners());
         this.pause.setOnClickListener(new PauseListner(myMediaPlayerSong,new PauseFromPlayer(this.play,this.pause)).onClickListeners());
-        this.next.setOnClickListener(new NextListner(myMediaPlayerSong,new NextFromPlayer(this.play,this.pause,myMediaPlayerSong.getMySongsPlayLists().sizeFile())).onClickListeners());
-        this.prevouis.setOnClickListener(new PrevouiseListner(myMediaPlayerSong,new PrevouisFromPlayer(this.play,this.pause)).onClickListeners());
+        this.next.setOnClickListener(new NextListner(myMediaPlayerSong,new NextFromPlayer(this.play,this.pause,view,myMediaPlayerSong.getMySongsPlayLists().sizeFile())).onClickListeners());
+        this.prevouis.setOnClickListener(new PrevouiseListner(myMediaPlayerSong,new PrevouisFromPlayer(this.play,this.pause,view)).onClickListeners());
         this.dropDown.setOnClickListener(new DropDownListner(myMediaPlayerSong,new DropDownStrategy(view)).onClickListeners());
         this.reply.setOnClickListener(new ReplyListner(myMediaPlayerSong,null).onClickListeners());
         this.shuffle.setOnClickListener(new ShuffleListner(myMediaPlayerSong,null).onClickListeners());

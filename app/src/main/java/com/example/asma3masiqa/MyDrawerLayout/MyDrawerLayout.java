@@ -15,14 +15,6 @@ public class MyDrawerLayout {
         setMyDrawerLayout(mainActivity);
     }
     public void setMyDrawerLayout(MainActivity mainActivity){
-        this.actionBarDrawerToggle = new ActionBarDrawerToggle(mainActivity,
-                this.drawerLayout,
-                R.string.nav_app_bar_open_drawer_description,
-                R.string.nav_app_bar_open_drawer_description);
-        drawerLayout.addDrawerListener(actionBarDrawerToggle);
-        mainActivity.getSupportActionBar().setHomeButtonEnabled(true);
-        mainActivity.getSupportActionBar().setDisplayShowHomeEnabled(true);
-        mainActivity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         new MyNavigationView(mainActivity).setItemClick();
     }
 

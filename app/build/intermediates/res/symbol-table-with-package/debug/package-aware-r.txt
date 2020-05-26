@@ -640,6 +640,7 @@ color colorAccent
 color colorPrimary
 color colorPrimaryDark
 color content_text
+color darkNight
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
 color design_default_color_primary_dark
@@ -1153,6 +1154,7 @@ id blocking
 id bottom
 id buttonPanel
 id byDate
+id byDefault
 id byName
 id bySize
 id cancel

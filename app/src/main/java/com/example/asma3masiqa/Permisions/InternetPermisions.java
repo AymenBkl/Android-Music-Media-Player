@@ -26,13 +26,14 @@ public class InternetPermisions extends MainActivityPermisions {
     public void showDialog(){
         InternetPermision internetPermision = new InternetPermision(this.downloadFromDialog);
         TedPermission.with(getMainActivity())
-                .setRationaleTitle("INTERNET PERMISSION")
-                .setRationaleMessage("MASIQA NEED YOUR PERMISION IN ORDER TO DOWNLOAD THE SONG")
-                .setRationaleConfirmText("ALLOW")
-                .setDeniedMessage("DENY")
-                .setDeniedTitle("GO TO SETTINGS TO CHANGE PERMISIONS")
-                .setDeniedMessage("ADD INTERNET PERMISSION")
+                .setDeniedTitle("GO TO SETTINGS TO CHANGE PERMISIONS IN ORDER TO LISTEN")
+                .setDeniedMessage("ADD STORAGE PERMISSION")
+                .setGotoSettingButton(true)
+                .setGotoSettingButtonText("SETTINGS")
+                .setRationaleTitle("INTERNET AND SOTRAGE PERMISSION NOT GRANTED")
+                .setRationaleMessage("MASIQA NEED YOUR INTERNET AND STORAGE PERMISION IN TO DOWNLOAD YOUR SONG")
                 .setDeniedCloseButtonText("DENY")
+                .setRationaleConfirmText("ALLOW")
                 .setPermissions(Manifest.permission.INTERNET,Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 .setPermissionListener(internetPermision.setPermisionListner())
                 .check();

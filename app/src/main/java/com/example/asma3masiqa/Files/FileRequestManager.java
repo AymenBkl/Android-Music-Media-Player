@@ -3,9 +3,7 @@ package com.example.asma3masiqa.Files;
 import android.app.DownloadManager;
 import android.net.Uri;
 import android.os.Environment;
-import android.util.Log;
 
-import com.example.asma3masiqa.Threads.ThreadInializare;
 
 public class FileRequestManager {
 

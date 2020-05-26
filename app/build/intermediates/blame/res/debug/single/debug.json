@@ -44,6 +44,10 @@
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-normal_activity_main.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-normal\\activity_main.xml"
+    },
+    {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_stroke_color_selector.xml.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\color\\mtrl_btn_stroke_color_selector.xml"
     },
@@ -160,6 +164,10 @@
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-small_activity_main.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-small\\activity_main.xml"
+    },
+    {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
@@ -240,6 +248,10 @@
         "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\play_icon.xml"
     },
     {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-normal_headersongoptions.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-normal\\headersongoptions.xml"
+    },
+    {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable_resume.png.flat",
         "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\drawable\\resume.png"
     },
@@ -304,20 +316,20 @@
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
-        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action_tombstone.xml.flat",
-        "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\65dc2b21bd62d8b1f217bf7152bfde37\\core-1.3.0-alpha02\\res\\layout-v21\\notification_action_tombstone.xml"
-    },
-    {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action_tombstone.xml.flat",
+        "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\65dc2b21bd62d8b1f217bf7152bfde37\\core-1.3.0-alpha02\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_borderless_text_material.xml.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\anim_nav_default_pop_exit_anim.xml.flat",
@@ -450,6 +462,10 @@
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\65dc2b21bd62d8b1f217bf7152bfde37\\core-1.3.0-alpha02\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-large_mylist.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-large\\mylist.xml"
     },
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_exit.xml.flat",
@@ -596,6 +612,10 @@
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-large_headersongoptions.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-large\\headersongoptions.xml"
+    },
+    {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
@@ -646,6 +666,10 @@
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-normal_mysong.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-normal\\mysong.xml"
     },
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -786,6 +810,10 @@
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_downloadicon.png.flat",
         "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\downloadicon.png"
+    },
+    {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-large_song_player.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-large\\song_player.xml"
     },
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -956,6 +984,10 @@
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-large_activity_main.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-large\\activity_main.xml"
+    },
+    {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
@@ -1088,6 +1120,10 @@
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\color\\abc_tint_default.xml"
     },
     {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-small_mylist.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-small\\mylist.xml"
+    },
+    {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_icon_resume.png.flat",
         "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\icon_resume.png"
     },
@@ -1182,6 +1218,10 @@
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
+    },
+    {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-small_song_player.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-small\\song_player.xml"
     },
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_btn_checkable.xml.flat",
@@ -1378,6 +1418,10 @@
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_text_btn_text_color_selector.xml.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\color\\mtrl_text_btn_text_color_selector.xml"
+    },
+    {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-small_dialogdownload.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-small\\dialogdownload.xml"
     },
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_color_highlight_material.xml.flat",
@@ -1744,6 +1788,10 @@
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\color\\mtrl_chip_text_color.xml"
     },
     {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-small_headersongoptions.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-small\\headersongoptions.xml"
+    },
+    {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable_galaxy.jpg.flat",
         "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\drawable\\galaxy.jpg"
     },
@@ -1944,6 +1992,10 @@
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\drawable-ldrtl-hdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-normal_dialogdownload.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-normal\\dialogdownload.xml"
+    },
+    {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_dialog.xml.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\65dc2b21bd62d8b1f217bf7152bfde37\\core-1.3.0-alpha02\\res\\layout\\custom_dialog.xml"
     },
@@ -2068,6 +2120,10 @@
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\drawable-mdpi-v4\\design_ic_visibility_off.png"
     },
     {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-large_dialogdownload.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-large\\dialogdownload.xml"
+    },
+    {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
@@ -2094,6 +2150,10 @@
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_edit_text_material.xml.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-large_mysong.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-large\\mysong.xml"
     },
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_down.png.flat",
@@ -2192,6 +2252,10 @@
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-normal_song_player.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-normal\\song_player.xml"
+    },
+    {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\anim_nav_default_pop_enter_anim.xml.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\b7a5a71d9aeff4f2ed3a5e165703113d\\navigation-ui-2.3.0-alpha04\\res\\anim\\nav_default_pop_enter_anim.xml"
     },
@@ -2206,6 +2270,10 @@
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_spinner_textfield_background_material.xml.flat",
         "source": "C:\\Users\\aymen\\.gradle\\caches\\transforms-2\\files-2.1\\7df26908078c74ff4eeaf46e7b6b476c\\appcompat-1.0.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-small_mysong.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-small\\mysong.xml"
     },
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\color-v21_abc_btn_colored_borderless_text_material.xml.flat",
@@ -2402,6 +2470,10 @@
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_reply.png.flat",
         "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\reply.png"
+    },
+    {
+        "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\layout-normal_mylist.xml.flat",
+        "source": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\src\\main\\res\\layout-normal\\mylist.xml"
     },
     {
         "merged": "I:\\ESI STUDY\\S2\\android\\Asma3Masiqa\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_light.xml.flat",

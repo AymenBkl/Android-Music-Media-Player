@@ -17,6 +17,7 @@ public class MyMediaPlayerAdapter {
 
         try {
             mediaPlayer.setDataSource(songPath);
+            mediaPlayer.setLooping(true);
             mediaPlayer.prepare();
         } catch (IOException e) {
             e.printStackTrace();

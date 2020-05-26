@@ -24,4 +24,26 @@ public abstract class MyThread extends HandlerThread implements HandlerOperation
 
     }
 
+    @Override
+    public void interrupt() {
+        super.interrupt();
+    }
+
+    @Override
+    public void destroy() {
+
+        super.destroy();
+    }
+
+    @Override
+    public boolean quit() {
+        this.handler.getLooper().quit();
+        this.handler = null;
+        return super.quit();
+    }
+
+    @Override
+    public boolean quitSafely() {
+        return super.quitSafely();
+    }
 }

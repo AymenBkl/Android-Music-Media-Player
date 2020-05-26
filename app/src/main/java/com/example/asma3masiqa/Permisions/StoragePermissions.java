@@ -17,14 +17,14 @@ public class StoragePermissions extends MainActivityPermisions {
     public void showDialog() {
         StoragePermisionListner storagePermisionListner = new StoragePermisionListner(getMainActivity());
         TedPermission.with(getMainActivity())
-                .setRationaleTitle("SOTRAGE PERMISSION")
-                .setRationaleMessage("MASIQA NEED YOUR PERMISION IN ORDER TO DISPLAY YOUR SONGS")
-                .setRationaleConfirmText("ALLOW")
-                .setDeniedTitle("GO TO SETTINGS TO CHANGE PERMISIONS IN ORDER TO LISTEN")
+                .setDeniedTitle("IN SETTING YOU CAN TURN GRANT THE PERMISSIONS")
                 .setDeniedMessage("ADD STORAGE PERMISSION")
-                .setDeniedCloseButtonText("close")
                 .setGotoSettingButton(true)
-                .setGotoSettingButtonText("Settings")
+                .setGotoSettingButtonText("SETTINGS")
+                .setRationaleTitle("SOTRAGE PERMISSION NOT GRANTED")
+                .setRationaleMessage("MASIQA NEED YOUR STORAGE PERMISSION IN ORDER TO DISPLAY YOUR SONGS")
+                .setDeniedCloseButtonText("DENY")
+                .setRationaleConfirmText("ALLOW")
                 .setPermissions(Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 .setPermissionListener(storagePermisionListner.setPermisionListner())
                 .check();

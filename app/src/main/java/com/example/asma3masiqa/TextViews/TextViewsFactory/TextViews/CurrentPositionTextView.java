@@ -11,6 +11,8 @@ public class CurrentPositionTextView extends MyTextView {
     }
     @Override
     public void setText(String text) {
+        int duration = Integer.valueOf(text)/100;
+        text = String.valueOf(duration/60) + ":" + String.valueOf(duration%60);
         getTextView().setText(text);
     }
 }

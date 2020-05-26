@@ -4,11 +4,9 @@ import android.app.DownloadManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 
 import com.example.asma3masiqa.MainActivity;
 
-import java.io.File;
 
 public class BroadCastReciver {
 

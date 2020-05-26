@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.asma3masiqa.Buttons.FactoryButton.ValidButton;
 import com.example.asma3masiqa.Files.FileDownload;
@@ -26,17 +27,20 @@ public class ValiderListner  {
         affectListner(fileDownload,downloadThread,dialog);
     }
 
-    public void affectListner(final FileDownload fileDownload, final DownloadThread downloadThread, final Dialog dialog){
+    private void affectListner(final FileDownload fileDownload, final DownloadThread downloadThread, final Dialog dialog){
         this.valid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
                 String path = String.valueOf(uri.getText());
-                String extension = path.substring(path.lastIndexOf("."));
-                Uri myuri = Uri.parse(path);
-                String name = String.valueOf(nameFile.getText())+extension;
-                FileE file = new FileE(name,55f,path,myuri);
-                downloadThread.assignTask(fileDownload.DownloadFile(file));
+                if (!path.equalsIgnoreCase("")) {
+                    String extension = path.substring(path.lastIndexOf("."));
+                    Uri myuri = Uri.parse(path);
+                    String name = String.valueOf(nameFile.getText()) + extension;
+                    FileE file = new FileE(name, 55f, path, myuri);
+                    downloadThread.assignTask(fileDownload.DownloadFile(file));
+                }
+
             }
         });
     }
