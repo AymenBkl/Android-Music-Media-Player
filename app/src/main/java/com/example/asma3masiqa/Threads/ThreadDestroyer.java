@@ -4,7 +4,7 @@ import android.util.Log;
 
 public class ThreadDestroyer {
 
-    public static void destroy(MyThread myThread){
+    public static void destroy(MyThread myThread) {
         myThread.quit();
         myThread = null;
     }

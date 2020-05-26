@@ -17,6 +17,7 @@ public class ReplyListner extends OnClickListner{
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FragmentCommunication.setPlay(true);
                 getMyMediaPlayerSong().playMySong(FragmentCommunication.getFragmentCommunication().getCurrentSong());
             }
         };
