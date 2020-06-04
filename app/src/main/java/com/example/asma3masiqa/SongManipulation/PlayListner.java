@@ -21,7 +21,6 @@ public class PlayListner extends OnClickListner {
             public void onClick(View v) {
                         getMyMediaPlayerSong().getMySongsPlayLists().resumeSong();
                         getButtonsStrategy().doOperation();
-
                     }
                 };
             }

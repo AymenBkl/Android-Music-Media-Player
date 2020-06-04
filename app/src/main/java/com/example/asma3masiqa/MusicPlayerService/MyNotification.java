@@ -18,13 +18,13 @@ import static com.example.asma3masiqa.MusicPlayerService.MyNotificationChannel.C
 
 public class MyNotification {
 
+    private Notification myMusicPlayerNotification;
 
-    public static Notification buildNotification(Context context){
-        Bitmap icon = BitmapFactory.decodeResource(context.getResources(),R.drawable.mysongplayerbackground);
+    public Notification buildNotification(Context context){
+        Bitmap icon = BitmapFactory.decodeResource(context.getResources(),R.drawable.song);
         MediaSessionCompat mediaSessionCompat = new MediaSessionCompat(context,"tag");
-        Notification myMusicPlayerNotification = new NotificationCompat.Builder(context,CHANNEL_ID)
+        this.myMusicPlayerNotification = new NotificationCompat.Builder(context,CHANNEL_ID)
                 .setContentTitle("MasiqaPlayer")
-                .setContentText("Playing Now Test")
                 .setSmallIcon(R.drawable.song)
                 .setLargeIcon(icon)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
@@ -32,6 +32,7 @@ public class MyNotification {
                 .setColor(Color.CYAN)
                 .setShowWhen(false)
                 .setOnlyAlertOnce(true)
+                .setTicker("Hello From Other World")
                 .addAction(R.drawable.prevouis_icon,"Prevouis", PreviousIntent.buildIntent(context))
                 .addAction(R.drawable.play_icon,"Play", PlayPauseIntent.buildIntent(context))
                 .addAction(R.drawable.next_icon,"Next", NextIntent.buildIntent(context))
@@ -39,8 +40,12 @@ public class MyNotification {
                     .setShowActionsInCompactView(0,1,2)
                     .setMediaSession(mediaSessionCompat.getSessionToken())
                     )
-
                 .build();
         return myMusicPlayerNotification;
     }
+
+    public void changeText(String title){
+        this.myMusicPlayerNotification.tickerText = title;
+    }
+
 }

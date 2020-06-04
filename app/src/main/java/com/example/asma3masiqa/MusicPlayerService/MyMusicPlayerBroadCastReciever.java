@@ -7,6 +7,7 @@ import android.util.Log;
 
 import com.example.asma3masiqa.Files.BroadCastReciver;
 import com.example.asma3masiqa.MediaPlayer.MySongsPlayLists;
+import com.example.asma3masiqa.MusicPlayerService.OperationsService.NextOperation;
 
 import static com.example.asma3masiqa.MusicPlayerService.MyNotificationChannel.CHANNEL_NAME;
 
@@ -20,7 +21,7 @@ public class MyMusicPlayerBroadCastReciever extends BroadcastReceiver {
         }
         else if (action.equalsIgnoreCase("Next")){
             Log.i("lol","xdcliickednext");
-
+            NextOperation.doOperation();
         }
         else if (action.equalsIgnoreCase("Prev")){
             Log.i("lol","xdcliickedprev");

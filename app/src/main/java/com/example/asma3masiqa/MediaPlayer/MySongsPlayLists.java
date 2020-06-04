@@ -57,6 +57,21 @@ public class MySongsPlayLists implements Obvserver {
          myMedeaPlayerThread.assignTask(runnable);
 
     }
+    public void playSongForService(final int position){
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    myMediaPlayerAdapter.prepareSong(songs.get(position).getAbsolutePath());
+                    myMediaPlayerAdapter.play();
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        };
+        myMedeaPlayerThread.assignTask(runnable);
+    }
     public void pauseSong(){
         Runnable runnable = new Runnable() {
             @Override

@@ -19,19 +19,17 @@ import static com.example.asma3masiqa.MusicPlayerService.MyNotificationChannel.C
 import static com.example.asma3masiqa.MusicPlayerService.MyNotificationChannel.CHANNEL_NAME;
 
 public class MusicPlayerService extends Service {
-
-    private MyMusicPlayerBroadCastReciever myMusicPlayerBroadCastReciever;
+    private MyNotification myNotification;
     @Override
     public void onCreate() {
-        myMusicPlayerBroadCastReciever = new MyMusicPlayerBroadCastReciever();
-        registerReceiver(myMusicPlayerBroadCastReciever,new IntentFilter(CHANNEL_NAME));
+        this.myNotification = new MyNotification();
         super.onCreate();
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
 
-        startForeground(1,MyNotification.buildNotification(this));
+        startForeground(1,this.myNotification.buildNotification(this));
         MySongsPlayLists.getMySongsPlayLists().resumeSong();
         return START_NOT_STICKY;
     }
