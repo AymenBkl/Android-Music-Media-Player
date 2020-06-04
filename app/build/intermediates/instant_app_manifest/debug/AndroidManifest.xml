@@ -37,6 +37,9 @@
         </activity>
 
         <service android:name="com.example.asma3masiqa.MusicPlayerService.MusicPlayerService" />
+
+        <receiver android:name="com.example.asma3masiqa.MusicPlayerService.MyMusicPlayerBroadCastReciever" />
+
         <service
             android:name="leakcanary.internal.HeapAnalyzerService"
             android:exported="false" />

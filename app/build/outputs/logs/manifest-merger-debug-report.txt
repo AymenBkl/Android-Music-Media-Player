@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-32:12
 MERGED from [com.squareup.leakcanary:leakcanary-android:2.3] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\f88bce44c846491bc7eb2275197d6f33\leakcanary-android-2.3\AndroidManifest.xml:17:1-28:12
 MERGED from [gun0912.ted:tedpermission:2.2.2] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\ea91ac97ac570802a5192251cea51859\jetified-tedpermission-2.2.2\AndroidManifest.xml:2:1-17:12
 MERGED from [pub.devrel:easypermissions:1.1.3] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\792e4eb3dafbed82934d383032cd5019\jetified-easypermissions-1.1.3\AndroidManifest.xml:2:1-19:12
@@ -49,20 +49,20 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\aymen\.gradle\ca
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\63647da4654da12a6f2785cfbbad8123\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\e8fcc2415b8b0ba957b309bd060d0497\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\4cee4734b336f81c686d6e7b16dafec9\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml
 		INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml
-		ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml
-		ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:2:11-69
@@ -89,7 +89,7 @@ MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.3] C:\Users\aymen
 	android:name
 		ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:8:22-74
 application
-ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:10:5-29:19
+ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:10:5-30:19
 MERGED from [com.squareup.leakcanary:leakcanary-android:2.3] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\f88bce44c846491bc7eb2275197d6f33\leakcanary-android-2.3\AndroidManifest.xml:22:5-26:19
 MERGED from [com.squareup.leakcanary:leakcanary-android:2.3] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\f88bce44c846491bc7eb2275197d6f33\leakcanary-android-2.3\AndroidManifest.xml:22:5-26:19
 MERGED from [gun0912.ted:tedpermission:2.2.2] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\ea91ac97ac570802a5192251cea51859\jetified-tedpermission-2.2.2\AndroidManifest.xml:9:5-15:19
@@ -148,6 +148,10 @@ service#com.example.asma3masiqa.MusicPlayerService.MusicPlayerService
 ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:28:9-73
 	android:name
 		ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:28:18-71
+receiver#com.example.asma3masiqa.MusicPlayerService.MyMusicPlayerBroadCastReciever
+ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:29:9-86
+	android:name
+		ADDED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml:29:19-84
 uses-sdk
 INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from I:\ESI STUDY\S2\android\Asma3Masiqa\app\src\main\AndroidManifest.xml

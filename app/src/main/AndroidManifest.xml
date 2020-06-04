@@ -26,6 +26,7 @@
             </intent-filter>
         </activity>
         <service android:name=".MusicPlayerService.MusicPlayerService"/>
+        <receiver android:name=".MusicPlayerService.MyMusicPlayerBroadCastReciever"/>
     </application>
 
 </manifest>

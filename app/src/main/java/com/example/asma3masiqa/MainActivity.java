@@ -117,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         MyFragmentManager.getMyFragmentManager(MainActivity.this).detachFragment();
+        startService();
         Log.i("lol","xddeeestroyed");
         super.onDestroy();
     }
