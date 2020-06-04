@@ -11,9 +11,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60230d36-fd87-410e-bc73-9db5046bc484" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="60230d36-fd87-410e-bc73-9db5046bc484" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,35 +44,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/SongPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MusicPlayerService/MusicPlayerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="126">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+              <folding>
+                <element signature="e#2053#2054#0" expanded="true" />
+                <element signature="e#2080#2081#0" expanded="true" />
+                <element signature="e#2118#2119#0" expanded="true" />
+                <element signature="e#2150#2151#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MusicPlayerService/OperationsService/NextOperation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaPlayer/MySongsPlayLists.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
+            <state relative-caret-position="-82">
               <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+              <folding>
+                <element signature="e#2047#2048#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -195,21 +184,6 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="asma3masiqa" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="asma3masiqa" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="MusicPlayerService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="asma3masiqa" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="MusicPlayerService" type="462c0819:PsiDirectoryNode" />
-              <item name="OperationsService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
@@ -923,13 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaPlayer/MySongsPlayLists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/FragmentCommunication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -962,8 +929,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/SongPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="126">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
+            <element signature="e#2118#2119#0" expanded="true" />
+            <element signature="e#2150#2151#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1004,6 +977,16 @@
           <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaPlayer/MySongsPlayLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-82">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <folding>
+            <element signature="e#2047#2048#0" expanded="true" />
           </folding>
         </state>
       </provider>
