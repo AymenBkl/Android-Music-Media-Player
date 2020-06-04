@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
     public Handler handler;
     private DownloadMenu downloadMenu;
     private ActionBarDrawerToggle actionBarDrawerToggle;
+    private Intent intentService;
 
 
 
@@ -73,9 +74,11 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         handler = new Handler();
-
+        this.downloadMenu = new DownloadMenu(MainActivity.this);
+        StoragePermissions storagePermissions = new StoragePermissions(MainActivity.this);
+        storagePermissions.showDialog();
     }
-    /**
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return this.downloadMenu.onCreateOptionsMenu(menu);
@@ -86,27 +89,28 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         return this.downloadMenu.onOptionsItemSelected(item);
     }
-     **/
+
     @Override
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
-        /**this.downloadMenu = new DownloadMenu(MainActivity.this);
-        StoragePermissions storagePermissions = new StoragePermissions(MainActivity.this);
-        storagePermissions.showDialog();**/
+
         super.onPostCreate(savedInstanceState);
     }
 
     @Override
-    protected void onPostResume() {
+    protected void onPostResume(){
         super.onPostResume();
     }
 
     @Override
     protected void onResume() {
+
         super.onResume();
+
     }
 
     @Override
     protected void onPause() {
+        Log.i("lol","xdpaused");
         super.onPause();
     }
 
@@ -114,14 +118,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         MyFragmentManager.getMyFragmentManager(MainActivity.this).detachFragment();
         Log.i("lol","xddeeestroyed");
-        startService();
         super.onDestroy();
     }
 
 
     public void startService(){
-        Intent myServiceIntent = new Intent(this, MusicPlayerService.class);
-        startService(myServiceIntent);
+        this.intentService = new Intent(this, MusicPlayerService.class);
+        startService(this.intentService);
+    }
+
+    public void stopService(){
+        stopService(this.intentService);
     }
 
 }

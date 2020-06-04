@@ -37,6 +37,9 @@
         </activity>
 
         <service android:name="com.example.asma3masiqa.MusicPlayerService.MusicPlayerService" />
+        <service
+            android:name="leakcanary.internal.HeapAnalyzerService"
+            android:exported="false" />
 
         <activity
             android:name="com.gun0912.tedpermission.TedPermissionActivity"
@@ -48,6 +51,56 @@
             android:exported="false"
             android:label=""
             android:theme="@style/EasyPermissions.Transparent" />
+
+        <provider
+            android:name="leakcanary.internal.LeakCanaryFileProvider"
+            android:authorities="com.squareup.leakcanary.fileprovider.com.example.asma3masiqa"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/leak_canary_file_paths" />
+        </provider>
+
+        <activity
+            android:name="leakcanary.internal.activity.LeakActivity"
+            android:icon="@mipmap/leak_canary_icon"
+            android:label="@string/leak_canary_display_activity_label"
+            android:taskAffinity="com.squareup.leakcanary.com.example.asma3masiqa"
+            android:theme="@style/leak_canary_LeakCanary.Base" />
+
+        <activity-alias
+            android:name="leakcanary.internal.activity.LeakLauncherActivity"
+            android:banner="@drawable/leak_canary_tv_icon"
+            android:enabled="@bool/leak_canary_add_launcher_icon"
+            android:icon="@mipmap/leak_canary_icon"
+            android:label="@string/leak_canary_display_activity_label"
+            android:targetActivity="leakcanary.internal.activity.LeakActivity"
+            android:taskAffinity="com.squareup.leakcanary.com.example.asma3masiqa"
+            android:theme="@style/leak_canary_LeakCanary.Base" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- Android TV launcher intent -->
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name="leakcanary.internal.RequestStoragePermissionActivity"
+            android:excludeFromRecents="true"
+            android:icon="@mipmap/leak_canary_icon"
+            android:label="@string/leak_canary_storage_permission_activity_label"
+            android:taskAffinity="com.squareup.leakcanary.com.example.asma3masiqa"
+            android:theme="@style/leak_canary_Theme.Transparent" />
+
+        <receiver android:name="leakcanary.internal.NotificationReceiver" />
+
+        <provider
+            android:name="leakcanary.internal.AppWatcherInstaller$MainProcess"
+            android:authorities="com.example.asma3masiqa.leakcanary-installer"
+            android:exported="false" />
     </application>
 
 </manifest>
