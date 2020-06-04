@@ -87,9 +87,9 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
-        this.downloadMenu = new DownloadMenu(MainActivity.this);
+        /**this.downloadMenu = new DownloadMenu(MainActivity.this);
         StoragePermissions storagePermissions = new StoragePermissions(MainActivity.this);
-        storagePermissions.showDialog();
+        storagePermissions.showDialog();**/
         super.onPostCreate(savedInstanceState);
     }
 
