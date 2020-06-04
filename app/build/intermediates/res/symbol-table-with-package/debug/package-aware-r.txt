@@ -1427,6 +1427,7 @@ layout dialogdownload
 layout headersongoptions
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
+layout musicplayerlayout
 layout mylist
 layout mysong
 layout notification_action

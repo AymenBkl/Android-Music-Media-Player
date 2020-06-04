@@ -41,6 +41,7 @@ import com.example.asma3masiqa.Fragments.SongPlayer;
 import com.example.asma3masiqa.Fragments.SongsList;
 import com.example.asma3masiqa.MediaPlayer.MyMediaPlayerSong;
 import com.example.asma3masiqa.MediaPlayer.MySongsPlayLists;
+import com.example.asma3masiqa.MusicPlayerService.MusicPlayerService;
 import com.example.asma3masiqa.MyDrawerLayout.MyDrawerLayout;
 import com.example.asma3masiqa.Permisions.InternetPermisions;
 import com.example.asma3masiqa.Permisions.StoragePermissions;
@@ -74,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         handler = new Handler();
 
     }
-
+    /**
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return this.downloadMenu.onCreateOptionsMenu(menu);
@@ -85,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         return this.downloadMenu.onOptionsItemSelected(item);
     }
+     **/
     @Override
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
         /**this.downloadMenu = new DownloadMenu(MainActivity.this);
@@ -111,7 +113,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         MyFragmentManager.getMyFragmentManager(MainActivity.this).detachFragment();
+        Log.i("lol","xddeeestroyed");
+        startService();
         super.onDestroy();
+    }
+
+
+    public void startService(){
+        Intent myServiceIntent = new Intent(this, MusicPlayerService.class);
+        startService(myServiceIntent);
     }
 
 }
