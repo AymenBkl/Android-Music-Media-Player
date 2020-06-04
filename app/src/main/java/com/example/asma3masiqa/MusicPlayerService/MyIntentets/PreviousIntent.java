@@ -11,9 +11,9 @@ public class PreviousIntent extends MyIntents {
 
     public static PendingIntent buildIntent(Context context){
         Intent myIntent = new Intent(context, MyMusicPlayerBroadCastReciever.class);
-        myIntent.putExtra("Action","Next");
+        myIntent.putExtra("Action","Prev");
         PendingIntent actionIntent = PendingIntent.getBroadcast(context,
-                0,
+                2,
                 myIntent,
                 PendingIntent.FLAG_UPDATE_CURRENT);
         return actionIntent;

@@ -31,17 +31,7 @@ public class MusicPlayerService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
 
-        Intent notificationIntent = new Intent(this, MainActivity.class);
-        PendingIntent pendingIntent1 = PendingIntent.getBroadcast(this,0,new Intent(CHANNEL_NAME),PendingIntent.FLAG_UPDATE_CURRENT);
-        Notification myMusicPlayerNotification = new NotificationCompat.Builder(this,CHANNEL_ID)
-                .setContentTitle("MyService")
-                .setContentText("PLEASE PLAY")
-                .setSmallIcon(R.drawable.next_icon)
-                .setPriority(NotificationCompat.PRIORITY_HIGH)
-                .setCategory(NotificationCompat.CATEGORY_STATUS)
-                .addAction(R.drawable.play_icon,CHANNEL_NAME,pendingIntent1)
-                .build();
-        startForeground(1,myMusicPlayerNotification);
+        startForeground(1,MyNotification.buildNotification(this));
         MySongsPlayLists.getMySongsPlayLists().resumeSong();
         return START_NOT_STICKY;
     }

@@ -17,6 +17,7 @@ MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\aymen\.gradle\caches\tra
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\61965e5c06bda9445c13760f9d9ef779\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\ec593f8d91037f6ef1bbcd6a177afa1c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.0-alpha04] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\1b2f4d945b43f4d96e9559fe2168a53e\drawerlayout-1.1.0-alpha04\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.1.0] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\24bb03d10ab268a6aeafc941e4345037\media-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.3] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\ad9480f7950d1ad8382768fda6af4062\jetified-leakcanary-android-core-2.3\AndroidManifest.xml:17:1-75:12
 MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-androidx:2.3] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\7aced01c8c52a08461b0f843504d633e\leakcanary-object-watcher-android-androidx-2.3\AndroidManifest.xml:2:1-7:12
 MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-support-fragments:2.3] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\3b5326295cae391048e652dafbe2d2b7\jetified-leakcanary-object-watcher-android-support-fragments-2.3\AndroidManifest.xml:2:1-7:12
@@ -182,6 +183,8 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\aymen\.gradl
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\ec593f8d91037f6ef1bbcd6a177afa1c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.0-alpha04] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\1b2f4d945b43f4d96e9559fe2168a53e\drawerlayout-1.1.0-alpha04\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.0-alpha04] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\1b2f4d945b43f4d96e9559fe2168a53e\drawerlayout-1.1.0-alpha04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\24bb03d10ab268a6aeafc941e4345037\media-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\24bb03d10ab268a6aeafc941e4345037\media-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.3] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\ad9480f7950d1ad8382768fda6af4062\jetified-leakcanary-android-core-2.3\AndroidManifest.xml:20:5-44
 MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.3] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\ad9480f7950d1ad8382768fda6af4062\jetified-leakcanary-android-core-2.3\AndroidManifest.xml:20:5-44
 MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-androidx:2.3] C:\Users\aymen\.gradle\caches\transforms-2\files-2.1\7aced01c8c52a08461b0f843504d633e\leakcanary-object-watcher-android-androidx-2.3\AndroidManifest.xml:5:5-44

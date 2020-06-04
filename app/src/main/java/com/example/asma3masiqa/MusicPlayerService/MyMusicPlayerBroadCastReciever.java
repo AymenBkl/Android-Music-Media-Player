@@ -14,9 +14,17 @@ public class MyMusicPlayerBroadCastReciever extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent){
-        String action = intent.getAction();
-        if (action.equalsIgnoreCase(CHANNEL_NAME)){
-            Log.i("lol","xdcliicked");
+        String action = intent.getStringExtra("Action");
+        if (action.equalsIgnoreCase("PlayPause")){
+            Log.i("lol","xdcliickedplay");
+        }
+        else if (action.equalsIgnoreCase("Next")){
+            Log.i("lol","xdcliickednext");
+
+        }
+        else if (action.equalsIgnoreCase("Prev")){
+            Log.i("lol","xdcliickedprev");
+
         }
     }
 
