@@ -37,7 +37,7 @@ public class MusicPlayerService extends Service {
     }
     @Override
     public void onDestroy() {
-        Log.i("lol","xdDestroyed Service");
+        MySongsPlayLists.getMySongsPlayLists().destroy();
         super.onDestroy();
     }
     @Nullable

@@ -26,7 +26,7 @@ public class MyFragmentManager implements Obvserver {
 
     public void loadMainFragment(){
 
-        FragmentManager fragmentManager = this.mainActivity.getSupportFragmentManager();
+        FragmentManager fragmentManager = mainActivity.getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.playlistfragment,this.songsList);
         fragmentTransaction.add(R.id.playfragment,this.songPlayer);

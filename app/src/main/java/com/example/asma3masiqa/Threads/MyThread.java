@@ -2,6 +2,7 @@ package com.example.asma3masiqa.Threads;
 
 import android.os.Handler;
 import android.os.HandlerThread;
+import android.os.Looper;
 
 public abstract class MyThread extends HandlerThread implements HandlerOperations {
 
@@ -30,12 +31,12 @@ public abstract class MyThread extends HandlerThread implements HandlerOperation
     @Override
     public void destroy() {
         super.destroy();
-        quit();
     }
+
 
     @Override
     public boolean quit() {
-        this.handler.getLooper().quit();
+        getLooper().quit();
         this.handler = null;
         return super.quit();
     }

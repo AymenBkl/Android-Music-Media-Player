@@ -31,6 +31,7 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.Toast;
 
+import com.example.asma3masiqa.Buttons.ButtonStrategy.DropDownStrategy;
 import com.example.asma3masiqa.Dialogs.DownloadDialog;
 import com.example.asma3masiqa.Dialogs.DownloadFromDialog;
 import com.example.asma3masiqa.Dialogs.DownloadMenu.DownloadMenu;
@@ -65,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
     public Handler handler;
     private DownloadMenu downloadMenu;
     private ActionBarDrawerToggle actionBarDrawerToggle;
-    private Intent intentService;
 
 
 
@@ -119,24 +119,20 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        ThreadDestroyer.destroy(MyMedeaPlayerThread.getMyThread());
+        ThreadDestroyer.destroy(MyInterectionThread.getMyThread());
         ThreadDestroyer.destroy(DownloadThread.getMyThread());
         MyFragmentManager.getMyFragmentManager(MainActivity.this).detachFragment();
         startService();
         FileDownload.getFileDownload(null).destroy();
-
+        DropDownStrategy.destroy();
         super.onDestroy();
     }
 
 
     public void startService(){
-        this.intentService = new Intent(this, MusicPlayerService.class);
-        startService(this.intentService);
+        Intent intentService = new Intent(this, MusicPlayerService.class);
+        startService(intentService);
 
-    }
-
-    public void stopService(){
-        stopService(this.intentService);
     }
 
 }

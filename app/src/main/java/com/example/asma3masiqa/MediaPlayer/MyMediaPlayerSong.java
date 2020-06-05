@@ -48,6 +48,5 @@ public class MyMediaPlayerSong {
 
     public void destroy(){
         mySongsPlayLists.destroy();
-        System.exit(0);
     }
 }

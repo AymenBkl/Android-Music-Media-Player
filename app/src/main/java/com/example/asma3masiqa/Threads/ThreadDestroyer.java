@@ -5,6 +5,9 @@ import android.util.Log;
 public class ThreadDestroyer {
 
     public static void destroy(MyThread myThread) {
+        myThread.quit();
         myThread.interrupt();
+
+        Log.i("lol","xd"+myThread.isAlive());
     }
 }

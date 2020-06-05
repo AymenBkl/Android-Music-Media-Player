@@ -137,6 +137,5 @@ public class MySongsPlayLists implements Obvserver {
     public void destroy(){
         ThreadDestroyer.destroy(this.myMedeaPlayerThread);
         mySongsPlayLists = null;
-        System.exit(0);
     }
 }

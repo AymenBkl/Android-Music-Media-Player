@@ -7,18 +7,22 @@ import com.example.asma3masiqa.SongInteractions.SongInterecationHolder;
 
 public class DropDownStrategy extends ButtonsStrategy {
 
-    private static SongInterecationHolder songInterecationHolder;
+    private  static SongInterecationHolder songInterecationHolder;
 
     public DropDownStrategy(View view){
-        this.songInterecationHolder = new SongInterecationHolder(view);
+        songInterecationHolder = new SongInterecationHolder(view);
 
     }
 
 
     @Override
     public void doOperation() {
-        this.songInterecationHolder.fromSongPlayerToSongList();
+        songInterecationHolder.fromSongPlayerToSongList();
 
+    }
+
+    public static void destroy(){
+        songInterecationHolder = null;
     }
 
     public static void fromSongListToSongPlayer(){
