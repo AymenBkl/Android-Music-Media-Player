@@ -24,13 +24,5 @@ public class PrevouisFromPlayer extends ButtonsStrategy{
         this.songInterecationHolder.fromSongListToSongPlayer();
     }
 
-    public boolean checks(int position){
-        if (position >= 0 ){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
 
 }

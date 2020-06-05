@@ -23,13 +23,10 @@ public class PrevouiseListner extends OnClickListner {
             public void onClick(View v) {
                 setCurrentSong(FragmentCommunication.getFragmentCommunication().getCurrentSong());
                 if (!SongShuffled.getSongShuffled().getShuffled()) {
-                    if (((PrevouisFromPlayer) getButtonsStrategy()).checks(getCurrentSong())) {
                         setCurrentSong(getCurrentSong() - 1);
                         FragmentCommunication.getFragmentCommunication().setCurrentSong(getCurrentSong());
                         MyFragmentManager.getMyFragmentManager(null).fromSongListToSongPlayer();
                         getButtonsStrategy().doOperation();
-                    }
-
                 }
                 else {
                     setCurrentSong(RandomizeSong.getSongRandom(getMyMediaPlayerSong().getMySongsPlayLists().sizeFile()));

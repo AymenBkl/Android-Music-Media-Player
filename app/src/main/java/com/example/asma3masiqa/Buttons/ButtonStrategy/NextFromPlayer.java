@@ -12,11 +12,10 @@ public class NextFromPlayer extends ButtonsStrategy{
     private Button play;
     private Button pause;
     private SongInterecationHolder songInterecationHolder;
-    public NextFromPlayer(Button play, Button pause,View view ,int size) {
+    public NextFromPlayer(Button play, Button pause,View view) {
         this.play = play;
         this.pause = pause;
         this.songInterecationHolder = new SongInterecationHolder(view);
-        this.size = size;
     }
 
     @Override
@@ -24,14 +23,5 @@ public class NextFromPlayer extends ButtonsStrategy{
         VisibilityController.visibilityToInvisible(this.play);
         VisibilityController.visibilityToIVisible(this.pause);
         this.songInterecationHolder.fromSongListToSongPlayer();
-    }
-
-    public boolean checks(int position){
-        if (position < size - 1 ){
-            return true;
-        }
-        else {
-            return false;
-        }
     }
 }

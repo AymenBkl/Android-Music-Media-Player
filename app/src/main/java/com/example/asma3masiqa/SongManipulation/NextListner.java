@@ -26,14 +26,12 @@ public class NextListner extends OnClickListner {
             public void onClick(View v) {
                 setCurrentSong(FragmentCommunication.getFragmentCommunication().getCurrentSong());
                 if (!SongShuffled.getSongShuffled().getShuffled()) {
-                    if (((NextFromPlayer) getButtonsStrategy()).checks(getCurrentSong())) {
                         setCurrentSong(getCurrentSong() + 1);
                         FragmentCommunication.getFragmentCommunication().setCurrentSong(getCurrentSong());
                         MyFragmentManager.getMyFragmentManager(null).fromSongListToSongPlayer();
                         FragmentCommunication.getFragmentCommunication().setPlay(true);
-
                         getButtonsStrategy().doOperation();
-                    }
+
                 }
                 else {
                     setCurrentSong(RandomizeSong.getSongRandom(getMyMediaPlayerSong().getMySongsPlayLists().sizeFile()));

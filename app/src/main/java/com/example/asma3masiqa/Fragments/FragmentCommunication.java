@@ -1,5 +1,7 @@
 package com.example.asma3masiqa.Fragments;
 
+import com.example.asma3masiqa.MediaPlayer.MySongsPlayLists;
+
 public  class FragmentCommunication {
 
     private static int currentSong;
@@ -26,8 +28,17 @@ public  class FragmentCommunication {
 
     public void setCurrentSong(int currentSong) {
         this.play = true;
-        this.currentSong = currentSong;
+        if (currentSong >= MySongsPlayLists.getMySongsPlayLists().sizeFile()){
+            this.currentSong = 0;
+        }
+        else if (currentSong < 0){
+            this.currentSong = MySongsPlayLists.getMySongsPlayLists().sizeFile()-1;
+        }
+        else {
+            this.currentSong = currentSong;
+        }
     }
+
 
     public static FragmentCommunication getFragmentCommunication(){
         if (fragmentCommunication == null){
