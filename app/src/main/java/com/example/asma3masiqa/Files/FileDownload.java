@@ -66,4 +66,10 @@ public class FileDownload extends FileManager implements Subject {
         return fileDownload;
     }
 
+    public void destroy(){
+        fileDownload = null;
+
+        setMainActivity(null);
+    }
+
 }

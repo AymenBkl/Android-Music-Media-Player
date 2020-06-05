@@ -18,8 +18,6 @@ public class DownloadMenu{
     private InternetPermisions internetPermisions;
     public DownloadMenu(MainActivity mainActivity){
         this.mainActivity = mainActivity;
-
-        this.downloadFromDialog = new DownloadFromDialog(this.mainActivity);
     }
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater downloadMenu = this.mainActivity.getMenuInflater();

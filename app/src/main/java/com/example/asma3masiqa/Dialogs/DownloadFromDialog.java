@@ -18,7 +18,7 @@ public class DownloadFromDialog extends DialogManager {
     private FileDownload fileDownload;
 
     public DownloadFromDialog(MainActivity mainActivity){
-        this.downloadThread = (DownloadThread) ThreadInializare.inizialize(new DownloadThread("My Download Thread"));
+        this.downloadThread = (DownloadThread) ThreadInializare.inizialize(DownloadThread.getMyThread());
         this.fileDownload = FileDownload.getFileDownload(mainActivity);
         this.downloadDialog = new DownloadDialog().getMyDialog(mainActivity,this.fileDownload,this.downloadThread);
 

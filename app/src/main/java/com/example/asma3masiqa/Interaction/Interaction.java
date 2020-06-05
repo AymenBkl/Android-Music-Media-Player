@@ -19,7 +19,7 @@ public class Interaction {
     public Interaction(View view, MyMediaPlayerAdapter myMediaPlayerAdapter){
         seekBar = SeekBarFactory.getSeekBar(view);
         this.myTextViewAdapter = new MyTextViewAdapter(view);
-        this.seekBarThread = (MyInterectionThread) ThreadInializare.inizialize(new MyInterectionThread("My Interaction Thread"));
+        this.seekBarThread = (MyInterectionThread) ThreadInializare.inizialize(MyInterectionThread.getMyThread());
         SeekBarListner.setListner(myMediaPlayerAdapter,seekBar);
     }
 

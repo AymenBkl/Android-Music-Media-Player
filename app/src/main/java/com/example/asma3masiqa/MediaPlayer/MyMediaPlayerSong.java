@@ -45,4 +45,9 @@ public class MyMediaPlayerSong {
     public void setMySongsPlayLists(MySongsPlayLists mySongsPlayLists) {
         this.mySongsPlayLists = mySongsPlayLists;
     }
+
+    public void destroy(){
+        mySongsPlayLists.destroy();
+        System.exit(0);
+    }
 }

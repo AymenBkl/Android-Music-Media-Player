@@ -34,7 +34,7 @@ public class MySongsPlayLists implements Obvserver {
         this.myMediaPlayerAdapter = new MyMediaPlayerAdapter();
         this.mySortAdapter = new MySortAdapter();
         this.songs = mySortAdapter.getMySongs(SortOption.getSortOption().getSortoption());
-        myMedeaPlayerThread = (MyMedeaPlayerThread) ThreadInializare.inizialize(new MyMedeaPlayerThread("MedeaPlayerThread"));
+        myMedeaPlayerThread = (MyMedeaPlayerThread) ThreadInializare.inizialize(MyMedeaPlayerThread.getMyThread());
         FileDownload.getFileDownload(null).registerObvserver(this);
 
 
@@ -137,5 +137,6 @@ public class MySongsPlayLists implements Obvserver {
     public void destroy(){
         ThreadDestroyer.destroy(this.myMedeaPlayerThread);
         mySongsPlayLists = null;
+        System.exit(0);
     }
 }

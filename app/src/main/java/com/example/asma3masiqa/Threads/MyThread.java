@@ -19,9 +19,7 @@ public abstract class MyThread extends HandlerThread implements HandlerOperation
     }
 
     public void assignTask(Runnable task){
-
         this.handler.postAtFrontOfQueue(task);
-
     }
 
     @Override
@@ -33,7 +31,6 @@ public abstract class MyThread extends HandlerThread implements HandlerOperation
     public void destroy() {
         super.destroy();
         quit();
-        Thread.currentThread().interrupt();
     }
 
     @Override

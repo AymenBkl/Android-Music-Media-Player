@@ -55,11 +55,10 @@ public class MyFragmentManager implements Obvserver {
    public void detachFragment(){
        FragmentManager fragmentManager = this.mainActivity.getSupportFragmentManager();
        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-       this.songPlayer.onDetach();
-       this.songsList.onDetach();
-       fragmentTransaction.detach(this.songsList);
-       fragmentTransaction.detach(this.songPlayer);
+       fragmentTransaction.remove(this.songsList);
+       fragmentTransaction.remove(this.songPlayer);
        fragmentTransaction.commitAllowingStateLoss();
+       destroy();
    }
 
     public static MyFragmentManager getMyFragmentManager(MainActivity mainActivity){
@@ -80,7 +79,12 @@ public class MyFragmentManager implements Obvserver {
     public static MainActivity getMainActivity() {
         return mainActivity;
     }
-
+    public void destroy(){
+        mainActivity = null;
+        myFragmentManager = null;
+        songPlayer.onDestroy();
+        songsList.onDestroy();
+    }
     @Override
     public void notifys() {
         removeFragments();

@@ -46,6 +46,9 @@ import com.example.asma3masiqa.MyDrawerLayout.MyDrawerLayout;
 import com.example.asma3masiqa.Permisions.InternetPermisions;
 import com.example.asma3masiqa.Permisions.StoragePermissions;
 import com.example.asma3masiqa.Threads.DownloadThread;
+import com.example.asma3masiqa.Threads.MyInterectionThread;
+import com.example.asma3masiqa.Threads.MyMedeaPlayerThread;
+import com.example.asma3masiqa.Threads.ThreadDestroyer;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
@@ -116,16 +119,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
+        ThreadDestroyer.destroy(MyMedeaPlayerThread.getMyThread());
+        ThreadDestroyer.destroy(DownloadThread.getMyThread());
         MyFragmentManager.getMyFragmentManager(MainActivity.this).detachFragment();
         startService();
-        Log.i("lol","xddeeestroyed");
-        try {
-            Thread.sleep(5000);
-            stopService();
+        FileDownload.getFileDownload(null).destroy();
 
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         super.onDestroy();
     }
 
