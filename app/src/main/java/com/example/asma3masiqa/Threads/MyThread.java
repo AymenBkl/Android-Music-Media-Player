@@ -31,8 +31,9 @@ public abstract class MyThread extends HandlerThread implements HandlerOperation
 
     @Override
     public void destroy() {
-
         super.destroy();
+        quit();
+        Thread.currentThread().interrupt();
     }
 
     @Override

@@ -119,6 +119,13 @@ public class MainActivity extends AppCompatActivity {
         MyFragmentManager.getMyFragmentManager(MainActivity.this).detachFragment();
         startService();
         Log.i("lol","xddeeestroyed");
+        try {
+            Thread.sleep(5000);
+            stopService();
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         super.onDestroy();
     }
 
@@ -126,6 +133,7 @@ public class MainActivity extends AppCompatActivity {
     public void startService(){
         this.intentService = new Intent(this, MusicPlayerService.class);
         startService(this.intentService);
+
     }
 
     public void stopService(){

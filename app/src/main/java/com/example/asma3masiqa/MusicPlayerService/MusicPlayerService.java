@@ -6,6 +6,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.IBinder;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
@@ -22,8 +23,9 @@ public class MusicPlayerService extends Service {
     private MyNotification myNotification;
     @Override
     public void onCreate() {
-        this.myNotification = new MyNotification();
         super.onCreate();
+        this.myNotification = new MyNotification(this);
+
     }
 
     @Override
@@ -35,6 +37,7 @@ public class MusicPlayerService extends Service {
     }
     @Override
     public void onDestroy() {
+        Log.i("lol","xdDestroyed Service");
         super.onDestroy();
     }
     @Nullable
