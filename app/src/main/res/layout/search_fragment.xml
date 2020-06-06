@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigiations"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        app:itemBackground="@color/colorAccent"
-        app:itemTextColor="@drawable/textcolor"
-        app:itemIconTint="@drawable/textcolor"
-        app:menu="@menu/bottom_navigation_menu"
-        android:layout_alignParentBottom="true"
-        />
-</RelativeLayout>
+        android:layout_height="match_parent"
+        android:text="this search"/>
+</LinearLayout>

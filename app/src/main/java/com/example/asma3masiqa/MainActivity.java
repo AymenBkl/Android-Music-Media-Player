@@ -2,33 +2,26 @@ package com.example.asma3masiqa;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Toast;
 
 
 import com.example.asma3masiqa.Buttons.ButtonStrategy.DropDownStrategy;
 import com.example.asma3masiqa.Dialogs.DownloadMenu.DownloadMenu;
 import com.example.asma3masiqa.Files.FileDownload;
-import com.example.asma3masiqa.Fragments.BottomNavigationFragment;
 import com.example.asma3masiqa.Fragments.MyFragmentManager;
 import com.example.asma3masiqa.MusicPlayerService.MusicPlayerService;
 import com.example.asma3masiqa.Permisions.StoragePermissions;
 import com.example.asma3masiqa.Threads.DownloadThread;
 import com.example.asma3masiqa.Threads.MyInterectionThread;
 import com.example.asma3masiqa.Threads.ThreadDestroyer;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class MainActivity extends AppCompatActivity {

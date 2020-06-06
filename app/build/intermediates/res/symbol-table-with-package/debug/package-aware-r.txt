@@ -1949,6 +1949,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout albums_layout
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1966,6 +1967,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialogdownload
+layout favorites_layout
 layout headersongoptions
 layout leak_canary_about_screen
 layout leak_canary_heap_analysis_failure_screen

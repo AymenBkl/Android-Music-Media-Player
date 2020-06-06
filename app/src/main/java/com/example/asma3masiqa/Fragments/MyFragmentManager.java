@@ -2,6 +2,8 @@ package com.example.asma3masiqa.Fragments;
 
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
+import com.example.asma3masiqa.BottomNavigationMenu.MyBottomNavigationView;
 import com.example.asma3masiqa.Controllers.HolderController;
 import com.example.asma3masiqa.MainActivity;
 import com.example.asma3masiqa.Obvserver.Obvserver;
@@ -13,15 +15,16 @@ public class MyFragmentManager implements Obvserver {
     private static MainActivity mainActivity;
     private SongPlayer songPlayer;
     private SongsList songsList;
-    private BottomNavigationFragment bottomNavigationFragment;
+    private MyBottomNavigationView myBottomNavigationView;
     private static MyFragmentManager myFragmentManager;
     private HolderController holderController;
 
     private MyFragmentManager(MainActivity mainActivitys) {
         mainActivity = mainActivitys;
-        this.songPlayer = new SongPlayer();
         this.songsList = new  SongsList();
-        this.bottomNavigationFragment = new BottomNavigationFragment(mainActivitys);
+        this.myBottomNavigationView = new MyBottomNavigationView(mainActivitys,this.songsList);
+        this.songPlayer = new SongPlayer();
+
         this.holderController = new HolderController(mainActivity);
 
     }
