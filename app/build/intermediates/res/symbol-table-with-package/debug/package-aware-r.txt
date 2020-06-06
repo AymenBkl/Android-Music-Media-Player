@@ -1498,6 +1498,7 @@ drawable reply
 drawable resume
 drawable roundedbutton
 drawable searchsongicon
+drawable searchtext
 drawable shuffle
 drawable size
 drawable song

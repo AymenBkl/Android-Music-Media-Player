@@ -22,7 +22,6 @@ public class SearchCollection {
         for(File file : this.mySongsPlayLists.songs){
             if (file.getName().toLowerCase().contains(text.toLowerCase())){
                 this.searchSongs.add(file);
-                Log.i("lol","xd"+file.getName());
             }
         }
     }

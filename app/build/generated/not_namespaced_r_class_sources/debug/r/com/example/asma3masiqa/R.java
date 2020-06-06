@@ -6893,16 +6893,17 @@ public final class R {
     public static final int resume=0x7f0700b0;
     public static final int roundedbutton=0x7f0700b1;
     public static final int searchsongicon=0x7f0700b2;
-    public static final int shuffle=0x7f0700b3;
-    public static final int size=0x7f0700b4;
-    public static final int song=0x7f0700b5;
-    public static final int songfa=0x7f0700b6;
-    public static final int songmusic=0x7f0700b7;
-    public static final int sortbyname=0x7f0700b8;
-    public static final int test_custom_background=0x7f0700b9;
-    public static final int textcolor=0x7f0700ba;
-    public static final int tooltip_frame_dark=0x7f0700bb;
-    public static final int tooltip_frame_light=0x7f0700bc;
+    public static final int searchtext=0x7f0700b3;
+    public static final int shuffle=0x7f0700b4;
+    public static final int size=0x7f0700b5;
+    public static final int song=0x7f0700b6;
+    public static final int songfa=0x7f0700b7;
+    public static final int songmusic=0x7f0700b8;
+    public static final int sortbyname=0x7f0700b9;
+    public static final int test_custom_background=0x7f0700ba;
+    public static final int textcolor=0x7f0700bb;
+    public static final int tooltip_frame_dark=0x7f0700bc;
+    public static final int tooltip_frame_light=0x7f0700bd;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
