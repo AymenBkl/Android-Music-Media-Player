@@ -7,34 +7,71 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     >
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-    <LinearLayout
-        android:id="@+id/holderForfragment1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="6">
-    <FrameLayout
-        android:id="@+id/playlistfragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/holderForfragment2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="6"
-        android:visibility="gone">
-    <FrameLayout
-        android:id="@+id/playfragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
-    </LinearLayout>
-    </LinearLayout>
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="15">
+
+            <LinearLayout
+                android:id="@+id/holderForfragment1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="14">
+
+                <FrameLayout
+                    android:id="@+id/playlistfragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/holderForfragment2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="14"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/playfragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkNight">
+                    <com.google.android.material.bottomnavigation.BottomNavigationView
+                        android:id="@+id/bottomNavigiations"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorAccent"
+                        app:itemBackground="@color/colorAccent"
+                        app:itemIconTint="@drawable/textcolor"
+                        app:itemTextColor="@drawable/textcolor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:menu="@menu/bottom_navigation_menu" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/songOptionsView"
@@ -45,6 +82,7 @@
         android:layout_gravity = "start"
         app:headerLayout="@layout/headersongoptions"
         app:menu="@menu/sortoptions"/>
+
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

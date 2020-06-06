@@ -15,12 +15,12 @@ public class HolderFragment1Controler extends MainActivityViewControler {
     @Override
     public void changeWeight() {
         LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) getHolderFragment().getLayoutParams();
-        layoutParams.weight = 5;
+        layoutParams.weight = 11;
     }
 
     @Override
     public void changeWeightOriginal() {
         LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) getHolderFragment().getLayoutParams();
-        layoutParams.weight = 6;
+        layoutParams.weight = 14;
     }
 }

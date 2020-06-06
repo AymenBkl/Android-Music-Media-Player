@@ -13,6 +13,7 @@ public class MyFragmentManager implements Obvserver {
     private static MainActivity mainActivity;
     private SongPlayer songPlayer;
     private SongsList songsList;
+    private BottomNavigationFragment bottomNavigationFragment;
     private static MyFragmentManager myFragmentManager;
     private HolderController holderController;
 
@@ -20,6 +21,7 @@ public class MyFragmentManager implements Obvserver {
         mainActivity = mainActivitys;
         this.songPlayer = new SongPlayer();
         this.songsList = new  SongsList();
+        this.bottomNavigationFragment = new BottomNavigationFragment(mainActivitys);
         this.holderController = new HolderController(mainActivity);
 
     }
