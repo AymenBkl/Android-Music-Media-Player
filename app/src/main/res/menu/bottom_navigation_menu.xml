@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/albums"
+            android:icon="@drawable/albums"
+            android:title="Albums"/>
+
+        <item
+            android:id="@+id/playlistSongs"
+            android:icon="@drawable/icon_playlist"
+            android:title="Songs"
+            />
+
+        <item
+            android:id="@+id/favsongs"
+            android:icon="@drawable/songfa"
+            android:title="Favorites"
+            />
+
+        <item
+            android:id="@+id/searchsong"
+            android:icon="@drawable/searchsongicon"
+            android:title="Search"/>
+
+</menu>
