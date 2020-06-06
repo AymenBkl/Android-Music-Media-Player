@@ -1799,6 +1799,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchText
 id search_badge
 id search_bar
 id search_button

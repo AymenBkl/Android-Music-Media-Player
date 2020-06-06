@@ -37,15 +37,11 @@ public class SongsList extends Fragment {
 
     @Override
     public void onDetach() {
-        Log.i("lol","detaaching");
-
         super.onDetach();
 
     }
     @Override
     public void onPause() {
-        Log.i("lol","paausing");
-
         super.onPause();
     }
 
@@ -55,8 +51,6 @@ public class SongsList extends Fragment {
     }
 
     @Override
-    public void onDestroy() {
-        Log.i("lol","deestroying");
-        super.onDestroy();
+    public void onDestroy() { super.onDestroy();
     }
 }
