@@ -39,11 +39,9 @@ public class SearchAdapter {
 
             @Override
             public void afterTextChanged(Editable s) {
-                if (!String.valueOf(s).equalsIgnoreCase("")) {
                     searchCollection.onKeyPressed(String.valueOf(s));
                     searchRecycleView.update();
                 }
-            }
         });
     }
 }

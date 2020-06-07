@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.asma3masiqa.R;
 import com.example.asma3masiqa.RecycleView.AnimationsRecycleView;
+import com.example.asma3masiqa.SongManipulation.OnClickListner;
+import com.example.asma3masiqa.SongManipulation.SearchViewListner;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -31,6 +33,7 @@ public class SearchSongsAdapter extends RecyclerView.Adapter<SearchSongsAdapter.
     @Override
     public void onBindViewHolder(@NonNull SongViewHolder holder, int position) {
         holder.bindViews(position);
+        holder.itemView.setOnClickListener(new SearchViewListner(null,null,searchCollection.searchSongs.get(position)).onClickListeners());
     }
 
     @Override

@@ -17,11 +17,13 @@ public class SearchCollection {
         this.searchSongs = new ArrayList<File>();
     }
 
-    public void onKeyPressed(String text){
-         this.searchSongs = new ArrayList<File>();
-        for(File file : this.mySongsPlayLists.songs){
-            if (file.getName().toLowerCase().contains(text.toLowerCase())){
-                this.searchSongs.add(file);
+    public void onKeyPressed(String text) {
+        this.searchSongs = new ArrayList<File>();
+        if (!text.equalsIgnoreCase("")) {
+            for (File file : this.mySongsPlayLists.songs) {
+                if (file.getName().toLowerCase().contains(text.toLowerCase())) {
+                    this.searchSongs.add(file);
+                }
             }
         }
     }
