@@ -6,6 +6,7 @@ import android.util.Log;
 
 import com.example.asma3masiqa.Fragments.AlbumsFragment;
 import com.example.asma3masiqa.Obvserver.Obvserver;
+import com.example.asma3masiqa.RecycleView.AlbumsRecycleView.CurrentAlbum;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -47,7 +48,8 @@ public class MySongsCollections  {
     }
     public List<File> getMysongs() {
         initiateSongs();
-        return this.mysongs.get("Unknown");
+        CurrentAlbum.setAlbums(this.mysongs.keySet().toArray(new String[0]));
+        return this.mysongs.get(CurrentAlbum.getCurrentAlbum());
     }
 
     public void setMysongs(List<File> mysongs) {

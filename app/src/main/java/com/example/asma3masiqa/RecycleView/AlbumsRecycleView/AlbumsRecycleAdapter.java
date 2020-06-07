@@ -25,11 +25,12 @@ public class AlbumsRecycleAdapter extends RecyclerView.Adapter<AlbumsRecycleAdap
     @Override
     public void onBindViewHolder(@NonNull AlbumsViewHolder holder, int position) {
         holder.bindViews(position);
+        holder.itemView.setOnClickListener(new AlbumClickListner().setListner(holder.textTitle));
     }
 
     @Override
     public int getItemCount() {
-        return 1;
+        return CurrentAlbum.getAlbums().length;
     }
 
     public class AlbumsViewHolder extends RecyclerView.ViewHolder{
@@ -41,7 +42,7 @@ public class AlbumsRecycleAdapter extends RecyclerView.Adapter<AlbumsRecycleAdap
         }
 
         public void bindViews(int position){
-
+            this.textTitle.setText(CurrentAlbum.getAlbums()[position]);
         }
 
         public void affectView(View view){

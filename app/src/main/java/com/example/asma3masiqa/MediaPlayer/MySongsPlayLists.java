@@ -131,7 +131,6 @@ public class MySongsPlayLists implements Obvserver {
     @Override
     public void notifys() {
         this.songs = mySortAdapter.getMySongs(SortOption.getSortOption().getSortoption());
-
     }
 
     public void destroy(){

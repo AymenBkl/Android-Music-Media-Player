@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.asma3masiqa.Fragments.AlbumsFragment;
 import com.example.asma3masiqa.Fragments.FavoritesFragment;
+import com.example.asma3masiqa.Fragments.GlobalFragmentManager;
 import com.example.asma3masiqa.Fragments.SearchFragment;
 import com.example.asma3masiqa.Fragments.SongsList;
 import com.example.asma3masiqa.MainActivity;
@@ -18,36 +19,30 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MyBottomNavigationView {
 
     private BottomNavigationView myBottomNavigationView;
-    private SongsList songsList;
-    private SearchFragment searchFragment;
-    private AlbumsFragment albumsFragment;
-    private FavoritesFragment favoritesFragment;
+    private GlobalFragmentManager globalFragmentManager;
     public MyBottomNavigationView(MainActivity mainActivity, SongsList songsList){
-        this.songsList = songsList;
-        this.searchFragment = new SearchFragment();
-        this.albumsFragment = new AlbumsFragment();
-        this.favoritesFragment = new FavoritesFragment();
+        this.globalFragmentManager = GlobalFragmentManager.getGlobalFragmentManager(mainActivity,songsList);
         this.myBottomNavigationView =  mainActivity.findViewById(R.id.bottomNavigiations);
-        setMyBottomNavigationView(mainActivity.getSupportFragmentManager());
+        setMyBottomNavigationView();
     }
 
-    private void setMyBottomNavigationView(final FragmentManager fragmentManager){
+    private void setMyBottomNavigationView(){
         this.myBottomNavigationView.setSelectedItemId(R.id.playlistSongs);
         this.myBottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.albums :
-                        fragmentManager.beginTransaction().replace(R.id.playlistfragment,albumsFragment).commit();
+                        globalFragmentManager.loadAlbumsFragment();
                         break;
                     case R.id.playlistSongs  :
-                        fragmentManager.beginTransaction().replace(R.id.playlistfragment,songsList).commit();
+                        globalFragmentManager.loadPlaylistFragment();
                         break;
                     case R.id.searchsong :
-                        fragmentManager.beginTransaction().replace(R.id.playlistfragment,searchFragment).commit();
+                        globalFragmentManager.loadSearchFragment();
                         break;
                     case R.id.favsongs:
-                        fragmentManager.beginTransaction().replace(R.id.playlistfragment,favoritesFragment).commit();
+                        globalFragmentManager.loadFavoriteFragment();
                         break;
                 }
                 return true;

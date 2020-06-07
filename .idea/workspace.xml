@@ -12,7 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60230d36-fd87-410e-bc73-9db5046bc484" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MySongsFiles/AlbumsCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/GlobalFragmentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/AlbumClickListner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/CurrentAlbum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -26,9 +28,10 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/MySongsFiles/MySongsCollections.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/MySongsFiles/MySongsCollections.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/MySongsFiles/MySongsCollections.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/MySongsFiles/MySongsCollections.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaStore/MediaStoreAlbums.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaStore/MediaStoreAlbums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/BottomNavigationMenu/MyBottomNavigationView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/BottomNavigationMenu/MyBottomNavigationView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaPlayer/MySongsPlayLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaPlayer/MySongsPlayLists.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MySongsFiles/MySongsCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MySongsFiles/MySongsCollections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/AlbumsRecycleAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/AlbumsRecycleAdapter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -63,26 +66,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2128#2129#0" expanded="true" />
-                <element signature="e#2164#2165#0" expanded="true" />
-                <element signature="e#2291#2292#0" expanded="true" />
-                <element signature="e#2322#2323#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MySongsFiles/MySongsCollections.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="34" column="92" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
+            <state relative-caret-position="227">
+              <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
               <folding>
                 <element signature="e#1894#1895#0" expanded="true" />
                 <element signature="e#1937#1938#0" expanded="true" />
@@ -92,32 +79,90 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MySongsFiles/AlbumsCategory.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MySongsFiles/MySortAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <state relative-caret-position="-229">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/AlbumClickListner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#573#579#0" expanded="true" />
+                <element signature="e#276#469#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaPlayer/MySongsPlayLists.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/GlobalFragmentManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2181">
-              <caret line="138" column="5" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
+            <state relative-caret-position="168">
+              <caret line="37" column="102" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MyDrawerLayout/SortOption.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/MyFragmentManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <caret line="71" column="47" lean-forward="true" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/BottomNavigationMenu/MyBottomNavigationView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/AlbumsRecycleAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="43" column="44" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/SearchManager/SearchSongsAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaPlayer/MySongsPlayLists.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -125,44 +170,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MyDrawerLayout/MyNavigationView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-792">
+            <state relative-caret-position="-552">
               <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MyDrawerLayout/MyDrawerLayout.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Permisions/StoragePermissions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Permisions/PermistionTedListner/StoragePermisionListner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MySongsFiles/MySortAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-48">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -189,16 +198,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Interaction/Interaction.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Dialogs/DownloadFromDialog.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Dialogs/DownloadMenu/DownloadMenu.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Threads/ThreadInializare.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/SongPlayer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Files/FileManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Threads/DownloadThread.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Files/FileDownload.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MusicPlayerService/MusicPlayerService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaPlayer/MySongsPlayLists.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaPlayer/MyMediaPlayerSong.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/PlayButton.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/ButtonStrategy/DropDownStrategy.java" />
@@ -216,8 +221,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/favorites_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/FavoritesFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/BottomNavigationMenu/BottomNavigationView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/MyFragmentManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/BottomNavigationMenu/MyBottomNavigationView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/SongsList.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/SearchSongsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/SearchFragment.java" />
@@ -231,7 +234,6 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/albums_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/MyRecycleView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/AlbumsRecycleAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/AlbumsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/card_view_albums_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/AlbumsRecycleView.java" />
@@ -239,11 +241,18 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaStore/MediaStoreAlbums.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MySongsFiles/AlbumsCategory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/CurrentAlbum.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/AlbumsRecycleAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MySongsFiles/MySongsCollections.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/MyFragmentManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/BottomNavigationMenu/MyBottomNavigationView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/GlobalFragmentManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/AlbumClickListner.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaPlayer/MySongsPlayLists.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1620" />
@@ -571,6 +580,13 @@
             <path>
               <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="asma3masiqa" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="SongManipulation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -724,12 +740,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1293" height="733" extended-state="7" />
+    <frame x="-6" y="-6" width="1293" height="733" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info id="Build Variants" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.19352227" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.19352227" />
       <window_info id="Structure" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
@@ -737,7 +753,7 @@
       <window_info id="Resources Explorer" order="7" weight="0.32955465" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="0" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.35875216" />
+      <window_info anchor="bottom" id="Logcat" order="1" visible="true" weight="0.35875216" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.32928944" />
       <window_info anchor="bottom" id="Android Profiler" order="3" weight="0.34835356" />
       <window_info anchor="bottom" id="Version Control" order="4" />
@@ -782,29 +798,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/textcolor.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_menu.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Controllers/HolderFragment2Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -874,25 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/BottomNavigationMenu/MyBottomNavigationView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="29" column="90" lean-forward="true" selection-start-line="29" selection-start-column="90" selection-end-line="29" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1376#2060#0" expanded="true" />
-            <element signature="e#2059#2060#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/MyFragmentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="17" column="58" lean-forward="true" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1061,30 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/SearchManager/SearchSongsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="34" column="14" selection-start-line="34" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/AlbumsRecycleAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/AlbumsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1153,31 +1103,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MySongsFiles/MySortAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaPlayer/MySongsPlayLists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2181">
-          <caret line="138" column="5" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MyDrawerLayout/SortOption.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MyDrawerLayout/MyNavigationView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1227,14 +1156,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/CurrentAlbum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding>
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/SearchManager/SearchSongsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/AlbumsRecycleAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="43" column="44" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MySongsFiles/MySortAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-229">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MySongsFiles/MySongsCollections.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="34" column="92" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
+        <state relative-caret-position="227">
+          <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
           <folding>
             <element signature="e#1894#1895#0" expanded="true" />
             <element signature="e#1937#1938#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/MyFragmentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="71" column="47" lean-forward="true" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/GlobalFragmentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="37" column="102" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MyDrawerLayout/MyNavigationView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-552">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/BottomNavigationMenu/MyBottomNavigationView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/AlbumsRecycleView/AlbumClickListner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#276#469#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MediaPlayer/MySongsPlayLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
         </state>
       </provider>
     </entry>
