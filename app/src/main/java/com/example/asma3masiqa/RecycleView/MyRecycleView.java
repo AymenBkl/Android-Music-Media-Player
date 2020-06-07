@@ -17,7 +17,6 @@ public class MyRecycleView {
     private SongsListAdapter songsListAdapter;
 
     public MyRecycleView(){
-        Log.i("lol","xdcreatedagain");
         this.songsListAdapter = new SongsListAdapter();
     }
     public void setRecyclerView(View view,Context context){

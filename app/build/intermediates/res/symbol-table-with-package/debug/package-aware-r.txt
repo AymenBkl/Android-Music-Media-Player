@@ -1573,7 +1573,10 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id album_image
+id album_title
 id albums
+id albumsList
 id alertTitle
 id all
 id always
@@ -1952,6 +1955,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout albums_layout
+layout card_view_albums_item
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
