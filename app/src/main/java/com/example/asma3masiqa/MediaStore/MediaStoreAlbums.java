@@ -24,11 +24,11 @@ public class MediaStoreAlbums {
                 do {
                     Long albumId = Long.valueOf(cursorAudio.getString(cursorAudio.getColumnIndex(MediaStore.Audio.Media.ALBUM_ID)));
                     cursorAlbum = context.getContentResolver().query(MediaStore.Audio.Albums.EXTERNAL_CONTENT_URI,
-                            new String[]{MediaStore.Audio.Albums._ID, MediaStore.Audio.Albums.ALBUM_ART},
+                            new String[]{MediaStore.Audio.Albums._ID, MediaStore.Audio.Albums.ALBUM,MediaStore.Audio.Media.IS_MUSIC},
                             MediaStore.Audio.Albums._ID + "=" + albumId, null, null);
 
                     if(cursorAlbum != null && cursorAlbum.moveToFirst()){
-                        String albumCoverPath = cursorAlbum.getString(cursorAlbum.getColumnIndex(MediaStore.Audio.Albums.ALBUM_ART));
+                        String albumCoverPath = cursorAlbum.getString(cursorAlbum.getColumnIndex(MediaStore.Audio.Albums.ALBUM));
                         String data = cursorAudio.getString(cursorAudio.getColumnIndex(MediaStore.Audio.Media.DATA));
                         musicPathArrList.add(new CommonModel(data,albumCoverPath ,false));
                     }
@@ -37,7 +37,7 @@ public class MediaStoreAlbums {
             }
         }
         for(CommonModel commonModel : musicPathArrList){
-            Log.i("lol","xd"+commonModel.getPath());
+            Log.i("lol","xd"+commonModel.getAlbumCoverPath());
         }
         return musicPathArrList;
 
