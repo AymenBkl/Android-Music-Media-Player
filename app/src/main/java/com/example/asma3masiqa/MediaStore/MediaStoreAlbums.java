@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.MediaStore;
+import android.util.Log;
 
 import java.util.ArrayList;
 
@@ -29,4 +30,16 @@ public class MediaStoreAlbums {
                     if(cursorAlbum != null && cursorAlbum.moveToFirst()){
                         String albumCoverPath = cursorAlbum.getString(cursorAlbum.getColumnIndex(MediaStore.Audio.Albums.ALBUM_ART));
                         String data = cursorAudio.getString(cursorAudio.getColumnIndex(MediaStore.Audio.Media.DATA));
-                        musicPathArrList.add(new CommonModel(data,albumCoverPath 
+                        musicPathArrList.add(new CommonModel(data,albumCoverPath ,false));
+                    }
+
+                } while (cursorAudio.moveToNext());
+            }
+        }
+        for(CommonModel commonModel : musicPathArrList){
+            Log.i("lol","xd"+commonModel.getPath());
+        }
+        return musicPathArrList;
+
+    }
+}

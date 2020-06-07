@@ -37,13 +37,17 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         handler = new Handler();
+        /**
         this.downloadMenu = new DownloadMenu(MainActivity.this);
         StoragePermissions storagePermissions = new StoragePermissions(MainActivity.this);
-        storagePermissions.showDialog();
+        storagePermissions.showDialog();**/
+
+
 
 
 
     }
+    /**
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return this.downloadMenu.onCreateOptionsMenu(menu);
@@ -53,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         return this.downloadMenu.onOptionsItemSelected(item);
-    }
+    }**/
 
     @Override
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
