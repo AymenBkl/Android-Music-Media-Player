@@ -4,6 +4,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.example.asma3masiqa.Buttons.ButtonStrategy.ButtonsStrategy;
+import com.example.asma3masiqa.Buttons.ButtonStrategy.FavoriteButtonStrategy;
 import com.example.asma3masiqa.Database.Controllers.FavSongController;
 import com.example.asma3masiqa.Database.Entities.FavSongs;
 import com.example.asma3masiqa.Database.MySongsDataBase;
@@ -25,13 +26,17 @@ public class FavoriteButton extends MyButtons {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i("lol","xdclieckedfavorites");
                 File song = getMySongsPlayLists().songs.get(getId());
-                favSongController.addFavSong(new FavSongs(song.getName(),song.getAbsolutePath()));
-                List<File> songs = favSongController.getFavSongs();
-                for(File songe :  songs){
-                    Log.i("lol","xd"+songe.getAbsolutePath());
+                Log.i("lol","xd"+favSongController.checkSongExist(song.getAbsolutePath()));
+                if (favSongController.checkSongExist(song.getAbsolutePath())){
+                    favSongController.removeFavSong(song.getAbsolutePath());
+                    ((FavoriteButtonStrategy) getButtonsStrategy()).setState(false);
                 }
+                else {
+                    favSongController.addFavSong(new FavSongs(song.getName(), song.getAbsolutePath()));
+                    ((FavoriteButtonStrategy) getButtonsStrategy()).setState(true);
+                }
+                getButtonsStrategy().doOperation();
             }
         };
     }

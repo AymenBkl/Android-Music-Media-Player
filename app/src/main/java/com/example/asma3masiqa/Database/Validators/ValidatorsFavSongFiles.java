@@ -18,7 +18,7 @@ public class ValidatorsFavSongFiles {
                 songs.add(song);
             }
             else {
-                favSongController.removeFavSong(favSong);
+                favSongController.removeFavSong(favSong.getSongUrl());
             }
         }
         return songs;

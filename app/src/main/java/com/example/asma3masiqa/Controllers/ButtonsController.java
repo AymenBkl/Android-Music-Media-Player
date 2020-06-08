@@ -3,6 +3,7 @@ package com.example.asma3masiqa.Controllers;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.asma3masiqa.Buttons.ButtonStrategy.FavoriteButtonStrategy;
 import com.example.asma3masiqa.Buttons.ButtonStrategy.PauseOperation;
 import com.example.asma3masiqa.Buttons.ButtonStrategy.PlayOperation;
 import com.example.asma3masiqa.Buttons.ButtonStrategy.ResumeOperation;
@@ -41,7 +42,7 @@ public class ButtonsController {
         newButtons.get(0).setOnClickListener((new PlayButton(id,mySongsPlayLists,new PlayOperation(newButtons.get(0),newButtons.get(2),newButtons.get(1)))).buttonFunction(buttonCommunicationsController));
         newButtons.get(2).setOnClickListener(new PauseButton(id,mySongsPlayLists,new PauseOperation(newButtons.get(0),newButtons.get(2),newButtons.get(1))).buttonFunction());
         newButtons.get(1).setOnClickListener(new ResumeButton(id,mySongsPlayLists,new ResumeOperation(newButtons.get(0),newButtons.get(2),newButtons.get(1))).buttonFunction());
-        newButtons.get(3).setOnClickListener(new FavoriteButton(id,mySongsPlayLists,null).buttonFunction());
+        newButtons.get(3).setOnClickListener(new FavoriteButton(id,mySongsPlayLists,new FavoriteButtonStrategy(newButtons.get(3))).buttonFunction());
     }
 
     public List<List<Button>> getButtons() {

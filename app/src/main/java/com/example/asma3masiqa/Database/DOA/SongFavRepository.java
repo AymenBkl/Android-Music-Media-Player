@@ -18,7 +18,7 @@ public interface SongFavRepository {
     @Query("SELECT * FROM favsongs")
     List<FavSongs> getAllFavsongs();
 
-    @Query("DELETE FROM favsongs where songUrl = :songUri")
+    @Query("DELETE FROM favsongs WHERE songUrl = :songUri")
     void removeFavSong(String songUri);
 
     @Query("SELECT * FROM favsongs WHERE songUrl = :songUri")

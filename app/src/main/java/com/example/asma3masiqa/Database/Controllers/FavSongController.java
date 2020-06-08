@@ -24,8 +24,8 @@ public class FavSongController {
     public void addFavSong(FavSongs favSong){
         this.songFavRepository.inserFavSong(favSong);
     }
-    public void removeFavSong(FavSongs favSongs){
-        this.removeFavSong(favSongs);
+    public void removeFavSong(String favSongs){
+        this.songFavRepository.removeFavSong(favSongs);
     }
     public boolean checkSongExist(String uri){
         FavSongs favSongs = this.songFavRepository.getFavSong(uri);
