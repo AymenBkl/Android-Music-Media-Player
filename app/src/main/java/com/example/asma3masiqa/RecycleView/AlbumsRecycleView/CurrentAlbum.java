@@ -2,8 +2,9 @@ package com.example.asma3masiqa.RecycleView.AlbumsRecycleView;
 
 public class CurrentAlbum {
 
-    public static String currentAlbum = "All Music";
-    public static String[] albums;
+    private static String currentAlbum = "All Music";
+    private static String prevouisAlbum = currentAlbum;
+    private static String[] albums;
     public static String getCurrentAlbum() {
         return currentAlbum;
     }
@@ -18,5 +19,13 @@ public class CurrentAlbum {
 
     public static void setAlbums(String[] albums) {
         CurrentAlbum.albums = albums;
+    }
+
+    public static String getPrevouisAlbum() {
+        return prevouisAlbum;
+    }
+
+    public static void setPrevouisAlbum() {
+        CurrentAlbum.prevouisAlbum = currentAlbum;
     }
 }

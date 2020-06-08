@@ -1,5 +1,6 @@
 package com.example.asma3masiqa.RecycleView.FavoriteFragmentRecycleView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,8 +10,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.asma3masiqa.Buttons.FavoriteButton;
 import com.example.asma3masiqa.R;
 import com.example.asma3masiqa.RecycleView.AnimationsRecycleView;
+import com.example.asma3masiqa.RecycleView.SearchManager.SearchCollection;
 import com.example.asma3masiqa.RecycleView.SearchManager.SearchSongsAdapter;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -20,8 +23,8 @@ public class FavoriteSongAdapter extends RecyclerView.Adapter<FavoriteSongAdapte
     private AnimationsRecycleView animationsRecycleView;
     private FavoriteSongsCollection favoriteSongsCollection;
 
-    public FavoriteSongAdapter(){
-        this.favoriteSongsCollection = new FavoriteSongsCollection();
+    public FavoriteSongAdapter(FavoriteSongsCollection favoriteSongsCollection){
+        this.favoriteSongsCollection = favoriteSongsCollection;
     }
     @NonNull
     @Override

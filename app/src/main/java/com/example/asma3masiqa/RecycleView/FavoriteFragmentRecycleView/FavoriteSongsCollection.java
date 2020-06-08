@@ -1,5 +1,7 @@
 package com.example.asma3masiqa.RecycleView.FavoriteFragmentRecycleView;
 
+import android.util.Log;
+
 import com.example.asma3masiqa.MediaPlayer.MySongsPlayLists;
 
 import java.io.File;
@@ -12,6 +14,9 @@ public class FavoriteSongsCollection {
 
     public FavoriteSongsCollection(){
         this.mySongsPlayLists = MySongsPlayLists.getMySongsPlayLists();
-        this.myFavSongs = mySongsPlayLists.songs;
+    }
+
+    public void update(){
+        this.myFavSongs = this.mySongsPlayLists.songs;
     }
 }

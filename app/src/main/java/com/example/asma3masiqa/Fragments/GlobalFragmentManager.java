@@ -1,5 +1,7 @@
 package com.example.asma3masiqa.Fragments;
 
+import android.util.Log;
+
 import androidx.fragment.app.FragmentManager;
 
 import com.example.asma3masiqa.Buttons.FactoryButton.FavoriteButtonFactory;
@@ -26,6 +28,7 @@ public class GlobalFragmentManager {
 
 
     public void loadFavoriteFragment(){
+        CurrentAlbum.setPrevouisAlbum();
         CurrentAlbum.setCurrentAlbum("Favorites");
         MySongsPlayLists.getMySongsPlayLists().notifys();
         this.fragmentManager.beginTransaction().replace(R.id.playlistfragment,this.favoritesFragment).commit();
@@ -40,10 +43,11 @@ public class GlobalFragmentManager {
     }
 
     public void loadPlaylistFragment(){
-        CurrentAlbum.setCurrentAlbum("All Music");
-        FavoriteButtonFactory.setId(0);
+        CurrentAlbum.setCurrentAlbum(CurrentAlbum.getPrevouisAlbum());
+        MySongsPlayLists.getMySongsPlayLists().notifys();
         this.fragmentManager.beginTransaction().replace(R.id.playlistfragment,this.songsList).commit();
     }
+
 
     public static GlobalFragmentManager getGlobalFragmentManager(MainActivity mainActivity,SongsList songsList){
         if (globalFragmentManager== null){

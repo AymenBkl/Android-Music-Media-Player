@@ -51,7 +51,7 @@ public class MySongsCollections  {
         getAllMyFile(new File(Environment.getExternalStorageDirectory()+""));
     }
     public List<File> getMysongs() {
-        if (!CurrentAlbum.currentAlbum.equalsIgnoreCase("Favorites")) {
+        if (!CurrentAlbum.getCurrentAlbum().equalsIgnoreCase("Favorites")) {
             CurrentAlbum.setAlbums(this.mysongs.keySet().toArray(new String[0]));
             return this.mysongs.get(CurrentAlbum.getCurrentAlbum());
         } else {

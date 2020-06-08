@@ -27,7 +27,6 @@ public class FavoriteButton extends MyButtons {
             @Override
             public void onClick(View v) {
                 File song = getMySongsPlayLists().songs.get(getId());
-                Log.i("lol","xd"+favSongController.checkSongExist(song.getAbsolutePath()));
                 if (favSongController.checkSongExist(song.getAbsolutePath())){
                     favSongController.removeFavSong(song.getAbsolutePath());
                     ((FavoriteButtonStrategy) getButtonsStrategy()).setState(false);

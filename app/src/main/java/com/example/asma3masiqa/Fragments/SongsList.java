@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.asma3masiqa.Buttons.FactoryButton.FavoriteButtonFactory;
 import com.example.asma3masiqa.R;
 import com.example.asma3masiqa.RecycleView.MyRecycleView;
 
@@ -26,6 +27,7 @@ public class SongsList extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.mylist,container,false);
+        FavoriteButtonFactory.setId(0);
         this.myRecycleView.setRecyclerView(view,getActivity());
         return view;
     }

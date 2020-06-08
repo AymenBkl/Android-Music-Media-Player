@@ -22,7 +22,6 @@ public class MySortAdapter {
         switch (option) {
             case "name" :
                 return this.sortSongName.sortSongs(this.mySongsCollections.getMysongs());
-
             case "size":
                 return this.sortSongSize.sortSongs(this.mySongsCollections.getMysongs());
             case "date":
