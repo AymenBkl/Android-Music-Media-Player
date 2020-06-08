@@ -1511,6 +1511,12 @@ drawable test_custom_background
 drawable textcolor
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font albumtitle1
+font albumtitle2
+font anotherfont
+font aokiinline
+font myfont
+font songnamefont
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1577,8 +1583,10 @@ id activity_chooser_view_content
 id add
 id album_image
 id album_title
+id albumimage
 id albums
 id albumsList
+id albumtitle
 id alertTitle
 id all
 id always

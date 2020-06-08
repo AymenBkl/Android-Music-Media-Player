@@ -1,6 +1,4 @@
 package com.example.asma3masiqa.Buttons.FactoryButton;
-
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 

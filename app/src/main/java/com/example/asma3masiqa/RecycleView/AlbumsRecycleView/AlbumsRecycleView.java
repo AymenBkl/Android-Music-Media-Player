@@ -21,6 +21,6 @@ public class AlbumsRecycleView {
     public void setRecyclerView(View view, Context context){
         this.recyclerView = (RecyclerView ) view.findViewById(R.id.albumsList);
         this.recyclerView.setAdapter(this.albumsRecycleAdapter);
-        this.recyclerView.setLayoutManager(new GridLayoutManager(context,3));
+        this.recyclerView.setLayoutManager(new GridLayoutManager(context,2));
     }
 }
