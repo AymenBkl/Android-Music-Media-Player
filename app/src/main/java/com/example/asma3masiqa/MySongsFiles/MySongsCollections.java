@@ -4,6 +4,8 @@ import android.media.MediaMetadataRetriever;
 import android.os.Environment;
 import android.util.Log;
 
+import com.example.asma3masiqa.Database.Controllers.FavSongController;
+import com.example.asma3masiqa.Database.MySongsDataBase;
 import com.example.asma3masiqa.Fragments.AlbumsFragment;
 import com.example.asma3masiqa.Obvserver.Obvserver;
 import com.example.asma3masiqa.RecycleView.AlbumsRecycleView.CurrentAlbum;
@@ -19,9 +21,11 @@ public class MySongsCollections  {
     private Map<String,List<File>> mysongs;
     private MediaMetadataRetriever mediaMetadataRetriever;
     private AlbumsCategory albumsCategory;
+
     public MySongsCollections(){
         this.mediaMetadataRetriever = new MediaMetadataRetriever();
         this.albumsCategory = new AlbumsCategory();
+        initiateSongs();
     }
     private void getAllMyFile(File file){
        File[] tempsongs = file.listFiles();
@@ -47,9 +51,13 @@ public class MySongsCollections  {
         getAllMyFile(new File(Environment.getExternalStorageDirectory()+""));
     }
     public List<File> getMysongs() {
-        initiateSongs();
-        CurrentAlbum.setAlbums(this.mysongs.keySet().toArray(new String[0]));
-        return this.mysongs.get(CurrentAlbum.getCurrentAlbum());
+        if (!CurrentAlbum.currentAlbum.equalsIgnoreCase("Favorites")) {
+            CurrentAlbum.setAlbums(this.mysongs.keySet().toArray(new String[0]));
+            return this.mysongs.get(CurrentAlbum.getCurrentAlbum());
+        } else {
+            FavSongController favSongController = new FavSongController(MySongsDataBase.getMySongsDataBase(null));
+            return favSongController.getFavSongs();
+        }
     }
 
     public void setMysongs(List<File> mysongs) {

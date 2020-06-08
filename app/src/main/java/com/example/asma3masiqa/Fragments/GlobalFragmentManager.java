@@ -2,8 +2,11 @@ package com.example.asma3masiqa.Fragments;
 
 import androidx.fragment.app.FragmentManager;
 
+import com.example.asma3masiqa.Buttons.FactoryButton.FavoriteButtonFactory;
 import com.example.asma3masiqa.MainActivity;
+import com.example.asma3masiqa.MediaPlayer.MySongsPlayLists;
 import com.example.asma3masiqa.R;
+import com.example.asma3masiqa.RecycleView.AlbumsRecycleView.CurrentAlbum;
 
 public class GlobalFragmentManager {
 
@@ -23,6 +26,8 @@ public class GlobalFragmentManager {
 
 
     public void loadFavoriteFragment(){
+        CurrentAlbum.setCurrentAlbum("Favorites");
+        MySongsPlayLists.getMySongsPlayLists().notifys();
         this.fragmentManager.beginTransaction().replace(R.id.playlistfragment,this.favoritesFragment).commit();
     }
 
@@ -35,6 +40,8 @@ public class GlobalFragmentManager {
     }
 
     public void loadPlaylistFragment(){
+        CurrentAlbum.setCurrentAlbum("All Music");
+        FavoriteButtonFactory.setId(0);
         this.fragmentManager.beginTransaction().replace(R.id.playlistfragment,this.songsList).commit();
     }
 

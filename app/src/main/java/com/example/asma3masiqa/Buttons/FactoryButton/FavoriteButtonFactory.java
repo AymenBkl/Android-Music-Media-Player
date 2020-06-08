@@ -1,5 +1,6 @@
 package com.example.asma3masiqa.Buttons.FactoryButton;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -21,5 +22,13 @@ public class FavoriteButtonFactory extends ButtonsFactory {
         }
         id++;
         return btn;
+    }
+
+    public static int getId() {
+        return id;
+    }
+
+    public static void setId(int id) {
+        FavoriteButtonFactory.id = id;
     }
 }

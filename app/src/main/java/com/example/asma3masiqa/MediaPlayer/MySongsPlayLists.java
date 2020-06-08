@@ -36,8 +36,6 @@ public class MySongsPlayLists implements Obvserver {
         this.songs = mySortAdapter.getMySongs(SortOption.getSortOption().getSortoption());
         myMedeaPlayerThread = (MyMedeaPlayerThread) ThreadInializare.inizialize(MyMedeaPlayerThread.getMyThread());
         FileDownload.getFileDownload(null).registerObvserver(this);
-
-
     }
 
     public void playSong(final int position, final MyMediaPlayerSong myMediaPlayerSong){
