@@ -6,9 +6,11 @@ import android.widget.Button;
 import com.example.asma3masiqa.Buttons.ButtonStrategy.PauseOperation;
 import com.example.asma3masiqa.Buttons.ButtonStrategy.PlayOperation;
 import com.example.asma3masiqa.Buttons.ButtonStrategy.ResumeOperation;
+import com.example.asma3masiqa.Buttons.FactoryButton.FavoriteButtonFactory;
 import com.example.asma3masiqa.Buttons.FactoryButton.PauseButtonFactory;
 import com.example.asma3masiqa.Buttons.FactoryButton.PlayButtonFactory;
 import com.example.asma3masiqa.Buttons.FactoryButton.ResumeButtonFactory;
+import com.example.asma3masiqa.Buttons.FavoriteButton;
 import com.example.asma3masiqa.Buttons.PauseButton;
 import com.example.asma3masiqa.Buttons.PlayButton;
 import com.example.asma3masiqa.Buttons.ResumeButton;
@@ -30,6 +32,7 @@ public class ButtonsController {
         newButtons.add(PlayButtonFactory.getButton(view));
         newButtons.add(ResumeButtonFactory.getButton(view));
         newButtons.add(PauseButtonFactory.getButton(view));
+        newButtons.add(FavoriteButtonFactory.getButton(view));
         this.buttons.add(newButtons);
         affectListners(id,mySongsPlayLists,newButtons,buttonCommunicationsController);
 
@@ -38,6 +41,7 @@ public class ButtonsController {
         newButtons.get(0).setOnClickListener((new PlayButton(id,mySongsPlayLists,new PlayOperation(newButtons.get(0),newButtons.get(2),newButtons.get(1)))).buttonFunction(buttonCommunicationsController));
         newButtons.get(2).setOnClickListener(new PauseButton(id,mySongsPlayLists,new PauseOperation(newButtons.get(0),newButtons.get(2),newButtons.get(1))).buttonFunction());
         newButtons.get(1).setOnClickListener(new ResumeButton(id,mySongsPlayLists,new ResumeOperation(newButtons.get(0),newButtons.get(2),newButtons.get(1))).buttonFunction());
+        newButtons.get(3).setOnClickListener(new FavoriteButton(id,mySongsPlayLists,null).buttonFunction());
     }
 
     public List<List<Button>> getButtons() {

@@ -6,32 +6,192 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="lol" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60230d36-fd87-410e-bc73-9db5046bc484" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Controllers/FavSongController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/DOA/SongFavRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Entities/FavSongs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/MySongsDataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/FactoryButton/FavoriteButtonFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/FavoriteButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Validators/ValidatorsFavSongFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_favorite_border_black_24dp.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/activity/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/activity/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/appcompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/appcompat/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/constraintlayout/widget/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/constraintlayout/widget/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/coordinatorlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/coordinatorlayout/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/core/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/core/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/customview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/customview/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/drawerlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/drawerlayout/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/fragment/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/fragment/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/loader/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/loader/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/recyclerview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/recyclerview/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/transition/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/transition/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/vectordrawable/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/vectordrawable/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/viewpager/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/viewpager/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/com/example/asma3masiqa/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/com/example/asma3masiqa/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/com/google/android/material/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/com/google/android/material/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/com/gun0912/tedpermission/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/com/gun0912/tedpermission/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/pub/devrel/easypermissions/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/pub/devrel/easypermissions/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/annotation_processor_list/debug/annotationProcessors.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/annotation_processor_list/debug/annotationProcessors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/external_libs_dex/debug/mergeExtDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/external_libs_dex/debug/mergeExtDexDebug/out/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/1A55Axa5w6Ja7HB08Q05GhJZkww=" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/1A55Axa5w6Ja7HB08Q05GhJZkww=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/8Ba4Ul7xzseGTCebXK0I8evQPIE=" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/8Ba4Ul7xzseGTCebXK0I8evQPIE=" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/activity/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/activity/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/activity/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/activity/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/appcompat/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/appcompat/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/appcompat/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/appcompat/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/constraintlayout/widget/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/constraintlayout/widget/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/coordinatorlayout/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/coordinatorlayout/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/coordinatorlayout/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/coordinatorlayout/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/core/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/core/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/core/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/core/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/fragment/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/fragment/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/fragment/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/fragment/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/loader/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/loader/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/loader/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/loader/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/recyclerview/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/recyclerview/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/recyclerview/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/recyclerview/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/transition/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/transition/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/transition/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/transition/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/vectordrawable/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/vectordrawable/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/vectordrawable/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/vectordrawable/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/viewpager/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/viewpager/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/viewpager/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/androidx/viewpager/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/NextFromPlayerButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/NextFromPlayerButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/PauseButtonFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/PauseButtonFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/PauseFromPlayerButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/PauseFromPlayerButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/PlayButtonFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/PlayButtonFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/PlayFromPlayerButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/PlayFromPlayerButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/PrevouisFromPlayerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/PrevouisFromPlayerFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/ReplyButtonFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/ReplyButtonFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/ResumeButtonFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/ResumeButtonFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/ShuffleButtonFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/ShuffleButtonFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/ValidButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Buttons/FactoryButton/ValidButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Controllers/ButtonsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Controllers/ButtonsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Controllers/HolderFragment1Controler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Controllers/HolderFragment1Controler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Controllers/HolderFragment2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Controllers/HolderFragment2Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Fragments/MyFragmentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Fragments/MyFragmentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Interaction/SeekBarFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/Interaction/SeekBarFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/MyDrawerLayout/MyNavigationView.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/MyDrawerLayout/MyNavigationView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$integer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$interpolator.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$interpolator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$mipmap.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$mipmap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$style.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$styleable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$xml.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/R$xml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/RecycleView/MyRecycleView.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/RecycleView/MyRecycleView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/RecycleView/SongsListAdapter$SongViewHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/RecycleView/SongsListAdapter$SongViewHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/SongInteractions/SongInteracetionFactory/SongInteractionHolderFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/SongInteractions/SongInteracetionFactory/SongInteractionHolderFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/SongManipulation/ValiderListner.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/SongManipulation/ValiderListner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/TextViews/TextViewsFactory/SongDurationFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/TextViews/TextViewsFactory/SongDurationFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/TextViews/TextViewsFactory/SongNameFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/asma3masiqa/TextViews/TextViewsFactory/SongNameFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/google/android/material/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/google/android/material/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/google/android/material/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/google/android/material/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/gun0912/tedpermission/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/gun0912/tedpermission/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/gun0912/tedpermission/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/gun0912/tedpermission/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/pub/devrel/easypermissions/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/pub/devrel/easypermissions/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/pub/devrel/easypermissions/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/pub/devrel/easypermissions/R$id.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_java_res/debug/out.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_java_res/debug/out.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_view_albums_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_view_albums_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/activity/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/activity/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/activity/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/activity/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/appcompat/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/appcompat/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/appcompat/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/appcompat/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/constraintlayout/widget/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/constraintlayout/widget/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/coordinatorlayout/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/coordinatorlayout/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/coordinatorlayout/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/coordinatorlayout/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/core/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/core/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/core/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/core/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/fragment/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/fragment/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/fragment/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/fragment/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/loader/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/loader/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/loader/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/loader/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/recyclerview/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/recyclerview/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/recyclerview/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/recyclerview/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/transition/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/transition/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/transition/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/transition/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/vectordrawable/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/vectordrawable/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/vectordrawable/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/vectordrawable/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/viewpager/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/viewpager/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/viewpager/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/viewpager/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/NextFromPlayerButton.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/NextFromPlayerButton.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/PauseButtonFactory.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/PauseButtonFactory.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/PauseFromPlayerButton.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/PauseFromPlayerButton.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/PlayButtonFactory.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/PlayButtonFactory.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/PlayFromPlayerButton.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/PlayFromPlayerButton.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/PrevouisFromPlayerFactory.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/PrevouisFromPlayerFactory.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/ReplyButtonFactory.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/ReplyButtonFactory.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/ResumeButtonFactory.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/ResumeButtonFactory.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/ShuffleButtonFactory.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/ShuffleButtonFactory.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/ValidButton.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Buttons/FactoryButton/ValidButton.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Controllers/ButtonsController.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Controllers/ButtonsController.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Controllers/HolderFragment1Controler.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Controllers/HolderFragment1Controler.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Controllers/HolderFragment2Controller.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Controllers/HolderFragment2Controller.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Fragments/MyFragmentManager.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Fragments/MyFragmentManager.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Interaction/SeekBarFactory.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/Interaction/SeekBarFactory.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/MainActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/MyDrawerLayout/MyNavigationView.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/MyDrawerLayout/MyNavigationView.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$integer.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$integer.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$interpolator.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$interpolator.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$menu.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$menu.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$mipmap.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$mipmap.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$style.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$style.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$styleable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$styleable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$xml.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/R$xml.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/RecycleView/MyRecycleView.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/RecycleView/MyRecycleView.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/RecycleView/SongsListAdapter$SongViewHolder.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/RecycleView/SongsListAdapter$SongViewHolder.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/SongInteractions/SongInteracetionFactory/SongInteractionHolderFactory.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/SongInteractions/SongInteracetionFactory/SongInteractionHolderFactory.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/SongManipulation/ValiderListner.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/SongManipulation/ValiderListner.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/TextViews/TextViewsFactory/SongDurationFactory.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/TextViews/TextViewsFactory/SongDurationFactory.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/TextViews/TextViewsFactory/SongNameFactory.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/asma3masiqa/TextViews/TextViewsFactory/SongNameFactory.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/google/android/material/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/google/android/material/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/google/android/material/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/google/android/material/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/gun0912/tedpermission/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/gun0912/tedpermission/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/gun0912/tedpermission/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/gun0912/tedpermission/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/pub/devrel/easypermissions/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/pub/devrel/easypermissions/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/pub/devrel/easypermissions/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/pub/devrel/easypermissions/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Controllers/ButtonsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Controllers/ButtonsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Controllers/FavSongController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Controllers/FavSongController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/DOA/SongFavRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/DOA/SongFavRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Entities/FavSongs.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Entities/FavSongs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-large/mysong.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-large/mysong.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -45,7 +205,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="127.0.0.1:62027" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -66,34 +226,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/card_view_albums_item.xml">
-          <provider editor-type-id="android-designer2" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/MySongsDataBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            <state relative-caret-position="103">
+              <caret line="40" column="68" lean-forward="true" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,17 +237,76 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Controllers/FavSongController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="198">
+              <caret line="20" column="98" selection-start-line="20" selection-start-column="98" selection-end-line="20" selection-end-column="98" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
                 <element signature="e#647#648#0" expanded="true" />
                 <element signature="e#666#667#0" expanded="true" />
+                <element signature="e#741#742#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/FactoryButton/FavoriteButtonFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#223#224#0" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/FavoriteButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#899#1385#0" expanded="true" />
+                <element signature="e#1384#1385#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Controllers/ButtonsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="43" column="106" selection-start-line="43" selection-start-column="106" selection-end-line="43" selection-end-column="106" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/PlayButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Validators/ValidatorsFavSongFiles.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#332#338#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,64 +315,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Entities/FavSongs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="24">
+              <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#656#657#0" expanded="true" />
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#733#734#0" expanded="true" />
-                <element signature="e#764#765#0" expanded="true" />
-                <element signature="e#812#813#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-                <element signature="e#886#887#0" expanded="true" />
-                <element signature="e#916#917#0" expanded="true" />
-                <element signature="e#962#963#0" expanded="true" />
-                <element signature="e#1000#1001#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
+                <element signature="e#676#677#0" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#766#767#0" expanded="true" />
+                <element signature="e#801#802#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+                <element signature="e#880#881#0" expanded="true" />
+                <element signature="e#920#921#0" expanded="true" />
+                <element signature="e#954#955#0" expanded="true" />
+                <element signature="e#984#985#0" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
+                <element signature="e#1068#1069#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/MySongsDataBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-132">
+              <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/DOA/SongFavRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="92">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/SongManipulation/ValiderListner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Files/FileManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="e#768#769#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Files/FileDownload.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -205,13 +383,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/PlayButton.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/ButtonStrategy/DropDownStrategy.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Threads/ThreadDestroyer.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Threads/MyThread.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/textcolor.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Fragments/BottomNavigationFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-large/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Controllers/HolderFragment1Controler.java" />
@@ -249,13 +420,20 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Files/FileDownload.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Permisions/PermistionTedListner/InternetPermision.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/SongManipulation/ValiderListner.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/card_view_albums_item.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Entities/FavSongs.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/DOA/SongFavRepository.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/MySongsDataBase.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Validators/Validators.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Validators/ValidatorsFavSongFiles.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Controllers/FavSongController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-large/mysong.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/FactoryButton/FavoriteButtonFactory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Controllers/ButtonsController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/FavoriteButton.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Entities/FavSongs.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Migrations/Migrate1_2.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/MySongsDataBase.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/DOA/SongFavRepository.java" />
       </list>
     </option>
   </component>
@@ -294,7 +472,37 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="asma3masiqa" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Buttons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="asma3masiqa" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Buttons" type="462c0819:PsiDirectoryNode" />
+              <item name="FactoryButton" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="asma3masiqa" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="asma3masiqa" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="Database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="asma3masiqa" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
@@ -307,6 +515,22 @@
             <path>
               <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="asma3masiqa" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="Entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="asma3masiqa" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="Validators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -314,6 +538,13 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="mysong" type="c431d0b8:AndroidResGroupNode" />
             </path>
             <path>
               <item name="Asma3 Masiqa" type="1abcf292:AndroidViewProjectNode" />
@@ -621,11 +852,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="733" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info id="Build Variants" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.19352227" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.19352227" />
       <window_info id="Structure" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
@@ -633,15 +863,15 @@
       <window_info id="Resources Explorer" order="7" weight="0.32955465" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="0" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.35875216" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.35875216" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.32928944" />
-      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" weight="0.34835356" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" weight="0.34835356" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.16811092" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50040483" side_tool="true" weight="0.32928944" />
-      <window_info anchor="bottom" id="Build" order="9" visible="true" weight="0.05199307" />
+      <window_info anchor="bottom" id="Build" order="9" weight="0.05199307" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -678,64 +908,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MusicPlayerService/MusicPlayerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MusicPlayerService/OperationsService/NextOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/SearchManager/SearchViewOnClick.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/SearchManager/SearchCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/RecycleView/SongsListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/SongManipulation/NextListner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="38" column="81" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/PlayButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="29" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/SongManipulation/SearchViewListner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#653#845#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/albums_layout.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -978,16 +1150,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="85" column="23" selection-start-line="85" selection-end-line="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Threads/ThreadDestroyer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1082,41 +1244,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Entities/FavSongs.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-large/mysong.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="333">
+          <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/DOA/SongFavRepository.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/PlayButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="20">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/MySongsDataBase.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Controllers/ButtonsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        <state relative-caret-position="264">
+          <caret line="43" column="106" selection-start-line="43" selection-start-column="106" selection-end-line="43" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="40" column="68" lean-forward="true" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1125,14 +1278,108 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Controllers/FavSongController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="198">
+          <caret line="20" column="98" selection-start-line="20" selection-start-column="98" selection-end-line="20" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
             <element signature="e#647#648#0" expanded="true" />
             <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/FactoryButton/FavoriteButtonFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Buttons/FavoriteButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#899#1385#0" expanded="true" />
+            <element signature="e#1384#1385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/com/example/asma3masiqa/Database/DOA/SongFavRepository_Impl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Validators/ValidatorsFavSongFiles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#332#338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Entities/FavSongs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#984#985#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/Migrations/Migrate1_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/MySongsDataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/asma3masiqa/Database/DOA/SongFavRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

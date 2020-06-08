@@ -14,6 +14,7 @@ import android.view.WindowManager;
 
 
 import com.example.asma3masiqa.Buttons.ButtonStrategy.DropDownStrategy;
+import com.example.asma3masiqa.Database.MySongsDataBase;
 import com.example.asma3masiqa.Dialogs.DownloadMenu.DownloadMenu;
 import com.example.asma3masiqa.Files.FileDownload;
 import com.example.asma3masiqa.Fragments.MyFragmentManager;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         handler = new Handler();
+        MySongsDataBase.getMySongsDataBase(getApplicationContext());
         this.downloadMenu = new DownloadMenu(MainActivity.this);
         StoragePermissions storagePermissions = new StoragePermissions(MainActivity.this);
         storagePermissions.showDialog();

@@ -24,6 +24,7 @@
         android:networkSecurityConfig="@xml/networkconfig"
         android:roundIcon="@drawable/song"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.asma3masiqa.MainActivity"

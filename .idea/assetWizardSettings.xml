@@ -149,7 +149,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/D:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/editor/ic_format_size_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/D:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_favorite_border_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -159,7 +159,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="size" />
+                            <entry key="outputName" value="ic_favorite_border_black_24dp" />
                             <entry key="sourceFile" value="C:\Users\aymen" />
                           </map>
                         </option>

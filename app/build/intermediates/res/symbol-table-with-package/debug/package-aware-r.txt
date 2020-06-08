@@ -1437,6 +1437,7 @@ drawable galaxy
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
+drawable ic_favorite_border_black_24dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
@@ -1643,6 +1644,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id favorite
 id favsongs
 id filename
 id fill

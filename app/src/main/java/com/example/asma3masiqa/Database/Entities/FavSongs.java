@@ -3,15 +3,17 @@ package com.example.asma3masiqa.Database.Entities;
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
-@Entity
+@Entity(indices = {@Index(value = {"songUrl"},unique = true)})
 public class FavSongs {
     @PrimaryKey(autoGenerate = true)
     @NonNull
     private long idFavSong;
     @ColumnInfo(name="songName")
     private String songName;
+
     @ColumnInfo(name="songUrl")
     private String songUrl;
 
