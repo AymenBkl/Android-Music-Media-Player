@@ -49,10 +49,15 @@ public class MySongsCollections  {
         this.mysongs = new HashMap<String,List<File>>();
         this.mysongs.put("All Music",new ArrayList<File>());
         getAllMyFile(new File(Environment.getExternalStorageDirectory()+""));
+        CurrentAlbum.setAlbums(this.mysongs.keySet().toArray(new String[0]));
+
     }
     public List<File> getMysongs() {
         if (!CurrentAlbum.getCurrentAlbum().equalsIgnoreCase("Favorites")) {
-            CurrentAlbum.setAlbums(this.mysongs.keySet().toArray(new String[0]));
+            Log.i("lol","xd"+CurrentAlbum.getCurrentAlbum());
+            for(File file : this.mysongs.get(CurrentAlbum.getCurrentAlbum())){
+                Log.i("lol","xd"+file.getName());
+            }
             return this.mysongs.get(CurrentAlbum.getCurrentAlbum());
         } else {
             FavSongController favSongController = new FavSongController(MySongsDataBase.getMySongsDataBase(null));

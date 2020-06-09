@@ -1,5 +1,6 @@
 package com.example.asma3masiqa.Fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -24,5 +25,25 @@ public class FavoritesFragment extends Fragment {
         View view = inflater.inflate(R.layout.favorites_layout,container,false);
         this.favoriteFragmentRecycleView.setRecyclerView(view,getActivity());
         return view;
+    }
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
     }
 }

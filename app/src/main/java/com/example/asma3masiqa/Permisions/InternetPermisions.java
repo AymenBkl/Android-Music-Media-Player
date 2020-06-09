@@ -9,12 +9,8 @@ import com.example.asma3masiqa.Dialogs.DownloadMenu.DownloadMenu;
 import com.example.asma3masiqa.Fragments.MyFragmentManager;
 import com.example.asma3masiqa.MainActivity;
 import com.example.asma3masiqa.Permisions.PermistionTedListner.InternetPermision;
-import com.example.asma3masiqa.Permisions.PermistionTedListner.PermisionTedListner;
 import com.gun0912.tedpermission.TedPermission;
 
-import pub.devrel.easypermissions.AfterPermissionGranted;
-import pub.devrel.easypermissions.AppSettingsDialog;
-import pub.devrel.easypermissions.EasyPermissions;
 
 public class InternetPermisions extends MainActivityPermisions {
     private DownloadFromDialog downloadFromDialog;

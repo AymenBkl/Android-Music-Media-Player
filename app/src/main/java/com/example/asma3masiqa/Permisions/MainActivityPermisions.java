@@ -9,8 +9,7 @@ import com.example.asma3masiqa.MainActivity;
 
 import java.util.List;
 
-import pub.devrel.easypermissions.AppSettingsDialog;
-import pub.devrel.easypermissions.EasyPermissions;
+
 
 public abstract class MainActivityPermisions  {
     private MainActivity mainActivity;

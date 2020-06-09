@@ -9,7 +9,6 @@ import com.example.asma3masiqa.Files.FileDownload;
 import com.example.asma3masiqa.MainActivity;
 import com.example.asma3masiqa.Threads.DownloadThread;
 
-import pub.devrel.easypermissions.EasyPermissions;
 
 public abstract class MyDialog {
     private Context context;

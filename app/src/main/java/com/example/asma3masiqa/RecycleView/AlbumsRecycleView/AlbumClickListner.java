@@ -20,6 +20,7 @@ public class AlbumClickListner {
             @Override
             public void onClick(View v) {
                 CurrentAlbum.setCurrentAlbum(textView.getText().toString());
+                CurrentAlbum.setPrevouisAlbum();
                 MySongsPlayLists.getMySongsPlayLists().notifys();
                 GlobalFragmentManager.getGlobalFragmentManager(null,null).loadPlaylistFragment();
             }
