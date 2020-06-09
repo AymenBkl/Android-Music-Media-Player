@@ -29,7 +29,7 @@ public class FavoriteSongAdapter extends RecyclerView.Adapter<FavoriteSongAdapte
     @NonNull
     @Override
     public FavoriteSongHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.mysong,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fav_item,parent,false);
         this.animationsRecycleView = new AnimationsRecycleView(parent.getContext());
         return new FavoriteSongHolder(view);
     }

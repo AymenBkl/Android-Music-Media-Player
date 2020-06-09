@@ -16,6 +16,7 @@ import com.example.asma3masiqa.MainActivity;
 import com.example.asma3masiqa.R;
 import com.example.asma3masiqa.RecycleView.MyRecycleView;
 import com.example.asma3masiqa.RecycleView.SearchManager.SearchAdapter;
+import com.example.asma3masiqa.RecycleView.SearchManager.SearchCollection;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class SearchFragment extends Fragment {
@@ -23,7 +24,7 @@ public class SearchFragment extends Fragment {
     private SearchAdapter searchAdapter;
 
     public SearchFragment(){
-        this.searchAdapter = new SearchAdapter();
+        this.searchAdapter = new SearchAdapter(new SearchCollection());
     }
     @Nullable
     @Override

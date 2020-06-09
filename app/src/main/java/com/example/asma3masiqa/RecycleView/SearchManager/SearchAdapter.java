@@ -15,9 +15,9 @@ public class SearchAdapter {
     private SearchCollection searchCollection;
     private EditText searchText;
 
-    public SearchAdapter(){
-        this.searchCollection = new SearchCollection();
-        this.searchRecycleView = new SearchRecycleView(this.searchCollection);
+    public SearchAdapter(SearchCollection searchCollection){
+        this.searchCollection = searchCollection;
+        this.searchRecycleView = new SearchRecycleView(searchCollection);
     }
 
     public void setSearchs(View view, Context context){

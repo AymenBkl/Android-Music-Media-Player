@@ -39,6 +39,9 @@ public class GlobalFragmentManager {
     }
 
     public void loadSearchFragment(){
+        CurrentAlbum.setCurrentAlbum("All Music");
+        CurrentAlbum.setPrevouisAlbum();
+        MySongsPlayLists.getMySongsPlayLists().notifys();
         this.fragmentManager.beginTransaction().replace(R.id.playlistfragment,this.searchFragment).commit();
     }
 

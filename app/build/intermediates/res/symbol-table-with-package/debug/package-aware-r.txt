@@ -1985,6 +1985,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialogdownload
+layout fav_item
 layout favorites_layout
 layout headersongoptions
 layout leak_canary_about_screen
