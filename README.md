@@ -10,6 +10,14 @@ Android simple Application allows you to download,and listen to your music with 
     - Song Progress to show the the current position of your song .
     - Display your songs by name,size or date .
     - Navigate throug all your playlist .
+    - Albums by the name of the album provided by the song .
+    - Search functionaly wich allow the user to search through all the songs. 
+    - Favorites song : the user can add his favorite song and play it .
+    - Bottom navigation wich allow the user to navigate to albums,songs,favorites songs and the search ui .
+    - The song details provided also .
+    - Forground service : when the application is destroyed the service starts .
+    - Interacte with the service to play,pause,next and prevouis song .
+   
 ```
 
 ## Permission
@@ -35,12 +43,15 @@ In order to make the application more powerfull and faster :
 ```
 
 All the threads share the same hierchy (MyThreads class that extends from HandlerThread) .
-
+## Services 
+```bash
+    - Download Service .
+    - Forground Service .
+```
 ## Langauge 
 ```bash
   JAVA
 ``` 
-
 ## Patterns
 
 ```bash
@@ -49,6 +60,11 @@ All the threads share the same hierchy (MyThreads class that extends from Handle
    - Strategy 
    - Observer 
    - Adapter
+```
+
+## Compatibility 
+```bash
+    - Responsive to all android screens .
 ```
 ## NOTE : Follows the SOLID design pattern principles .
 
